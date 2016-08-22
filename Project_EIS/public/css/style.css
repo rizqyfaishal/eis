@@ -18,26 +18,90 @@ Gray   Light: #E5DFEC
 */
 
 body {
-	background-image: url("../img/Background.png");
+	background-image: url("../img/bg.png");
+	background-size: cover;
+}
+
+.hexa-up {
+	position: fixed;
+	left: 68%;
+}
+
+.hexa-down {
+	position: fixed;
+	top: 85%;
+	left: 70%;
+}
+
+.eis-mark {
+	position: fixed;
+	left: 2%;
+	top: 90%;
 }
 
 .header-logo {
-	margin-left: 30%;
+	align-items: center;
+	display: flex;
+	justify-content: center;
 }
 
-header .nav-bar nav .header-ul li {
-	background-color: red;
+.header-logo img {
+	padding-top: 2%;
+}
+
+.nav-bar {
+	background-color: #9d9d9d;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	margin-top: 2%;
 }
 
 .header-ul {
-	width: 50%;
-	margin: auto;
+	margin: 0 auto;
+	display: table;
 }
 
 .header-ul li {
 	list-style: none;
 	float: left;
-	padding: 10px 20px 10px 20px;
+	padding: 0px 8px 0px 8px;
+	font-family: "Avenir Book";
+	font-size: 18px;
+	border-right: 2px solid white;
+}
+
+.header-ul li:last-child {
+	border: none;
+}
+
+.post-title {
+	font-family: "Avenir Book";
+	text-align: center;
+	font-size: 36px;
+	margin-top: 5%;
+	padding-bottom: 20px;
+}
+
+.whole-content {
+	margin-top: 2%;
+}
+
+.content-update {
+	border-right: 3px solid gray;
+}
+
+.content-ri {
+	border-right: 3px solid gray;
+}
+
+.content-upcoming {
+}
+
+.article p {
+	font-family: "Avenir Book";
+	font-size: 18px;
+	padding: 10px 50px 10px 50px;
+	text-align: justify;
 }
 
 a {
