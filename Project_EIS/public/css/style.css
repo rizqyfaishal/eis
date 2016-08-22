@@ -1,0 +1,56 @@
+@font-face {
+	font-family: 'Avenir Book';
+	src: url('../fonts/AvenirLTStd-Book.otf');
+}
+
+/*
+Color List
+Brown  Dark : #C9AE8A
+Brown  Light: #F0E2BC
+Cyan   Dark : #CCE6D2
+Cyan   Light: #E3F2DC
+Blue   Dark : #AABCD2
+Blue   Light: #D3F0F4
+Purple Dark : #DCC5C1
+Purple Light: #FBEAE9
+Gray   Dark : #E7E1E1
+Gray   Light: #E5DFEC
+*/
+
+body {
+	background-image: url("../img/Background.png");
+}
+
+.header-logo {
+	margin-left: 30%;
+}
+
+header .nav-bar nav .header-ul li {
+	background-color: red;
+}
+
+.header-ul {
+	width: 50%;
+	margin: auto;
+}
+
+.header-ul li {
+	list-style: none;
+	float: left;
+	padding: 10px 20px 10px 20px;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover, a:active, a:link {
+	text-decoration: none;
+	color: gray;
+}
+
+a:visited {
+	text-decoration: none;
+	color: white;
+}
