@@ -22,25 +22,34 @@ body {
 	background-size: cover;
 }
 
-.font-avenir-book{
-	font-family: "Avenir Book";
-}
-
 .hexa-up {
 	position: fixed;
 	left: 68%;
+	z-index: -1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";       /* IE 8 */
+	filter: alpha(opacity=70);  /* IE 5-7 */
+	-moz-opacity: 0.7;          /* Netscape */
+	-khtml-opacity: 0.7;        /* Safari 1.x */
+	opacity: 0.7;               /* Good browsers */
 }
 
 .hexa-down {
 	position: fixed;
 	top: 85%;
 	left: 70%;
+	z-index: -1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";       /* IE 8 */
+	filter: alpha(opacity=70);  /* IE 5-7 */
+	-moz-opacity: 0.7;          /* Netscape */
+	-khtml-opacity: 0.7;        /* Safari 1.x */
+	opacity: 0.7;               /* Good browsers */
 }
 
 .eis-mark {
 	position: fixed;
 	left: 2%;
 	top: 90%;
+	z-index: -1;
 }
 
 .header-logo {
@@ -55,6 +64,11 @@ body {
 
 .nav-bar {
 	background-color: #9d9d9d;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";       /* IE 8 */
+	filter: alpha(opacity=70);  /* IE 5-7 */
+	-moz-opacity: 0.7;          /* Netscape */
+	-khtml-opacity: 0.7;        /* Safari 1.x */
+	opacity: 0.7;               /* Good browsers */
 	padding-top: 1em;
 	padding-bottom: 1em;
 	margin-top: 2%;
@@ -137,9 +151,9 @@ body {
 }
 
 #maps {
-		height:450px;
-    width: 500px;
-    display: block;
-    margin: 0 auto;
-		margin-bottom: 1em;
+	height:450px;
+	width: 500px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 1em;
 }
