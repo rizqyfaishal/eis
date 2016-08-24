@@ -13,9 +13,7 @@
         <div class="row">
 
             <iframe id="maps"
-  width="600"
-  height="450"
-  frameborder="200px" style="border:0"
+  frameborder="0" style="border:0"
   src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAyl5lSDTppcIvICxImY-oDCHyt0dDRdkE
     &q=Fakultas Ekonomi dan Bisnis Universitas Indonesia" >
 </iframe>
