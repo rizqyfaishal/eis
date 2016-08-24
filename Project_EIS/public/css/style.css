@@ -17,10 +17,22 @@ Gray   Dark : #E7E1E1
 Gray   Light: #E5DFEC
 */
 
+
 body {
 	background-image: url("../img/bg.png");
 	background-size: cover;
 }
+
+/**
+General
+*/
+.font-avenir-book{
+	font-family: "Avenir Book";
+}
+
+/**
+Home
+*/
 
 .hexa-up {
 	position: fixed;
@@ -117,4 +129,12 @@ a:hover, a:active, a:link {
 a:visited {
 	text-decoration: none;
 	color: white;
+}
+
+/**
+Contact Us
+*/
+#maps{
+	margin-left: auto;
+	margin-right: auto;
 }
