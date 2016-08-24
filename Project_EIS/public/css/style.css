@@ -74,6 +74,16 @@ body {
 	border: none;
 }
 
+.header-ul li a:visited, .header-ul li a:link {
+	text-decoration: none;
+	color: white;
+}
+
+.header-ul li a:active, .header-ul li a:hover {
+	text-decoration: none;
+	color: gray;
+}
+
 .post-title {
 	font-family: "Avenir Book";
 	text-align: center;
@@ -95,6 +105,7 @@ body {
 }
 
 .content-upcoming {
+
 }
 
 .article p {
@@ -104,17 +115,20 @@ body {
 	text-align: justify;
 }
 
-a {
+.footer-copyright {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	margin-top: 3%;
+}
+
+.footer-copyright p a:visited, .footer-copyright p a:link {
 	text-decoration: none;
 	color: white;
 }
 
-a:hover, a:active, a:link {
+.footer-copyright p a:hover, .footer-copyright p a:active {
 	text-decoration: none;
 	color: gray;
 }
 
-a:visited {
-	text-decoration: none;
-	color: white;
-}

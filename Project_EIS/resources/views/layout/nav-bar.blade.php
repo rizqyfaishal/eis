@@ -1,5 +1,3 @@
-
-@section('nav-bar')
     <div class="row nav-bar">
         <nav role="navigation">
             <ul class="nav header-ul">
@@ -12,4 +10,3 @@
             </ul>
         </nav>
     </div>
-@stop
