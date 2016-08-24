@@ -17,22 +17,14 @@ Gray   Dark : #E7E1E1
 Gray   Light: #E5DFEC
 */
 
-
 body {
 	background-image: url("../img/bg.png");
 	background-size: cover;
 }
 
-/**
-General
-*/
 .font-avenir-book{
 	font-family: "Avenir Book";
 }
-
-/**
-Home
-*/
 
 .hexa-up {
 	position: fixed;
@@ -86,6 +78,16 @@ Home
 	border: none;
 }
 
+.header-ul li a:visited, .header-ul li a:link {
+	text-decoration: none;
+	color: white;
+}
+
+.header-ul li a:active, .header-ul li a:hover {
+	text-decoration: none;
+	color: gray;
+}
+
 .post-title {
 	font-family: "Avenir Book";
 	text-align: center;
@@ -107,6 +109,7 @@ Home
 }
 
 .content-upcoming {
+
 }
 
 .article p {
@@ -116,25 +119,19 @@ Home
 	text-align: justify;
 }
 
-a {
+.footer-copyright {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	margin-top: 3%;
+}
+
+.footer-copyright p a:visited, .footer-copyright p a:link {
 	text-decoration: none;
 	color: white;
 }
 
-a:hover, a:active, a:link {
+.footer-copyright p a:hover, .footer-copyright p a:active {
 	text-decoration: none;
 	color: gray;
-}
-
-a:visited {
-	text-decoration: none;
-	color: white;
-}
-
-/**
-Contact Us
-*/
-#maps{
-	margin-left: auto;
-	margin-right: auto;
 }

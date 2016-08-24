@@ -1,16 +1,12 @@
-<!DOCTYPE HTML>
-<html lang="en">
+@extends('layout/master')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/style.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/bootstrap.min.css') }}">
-    <title>Contact Us</title>
-</head>
-    <body>
+@section('title')
+
+    Contact Us
+
+@endsection
+
+@section('content')
         <div class="row text-center font-avenir-book">
             <h1>CONTACT US</h1>
         </div>
@@ -42,5 +38,4 @@
                 <p>eisociety.ui@gmail.com</p>
             </div>
         </div>
-    </body>
-</html>
+@endsection
