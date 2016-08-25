@@ -1,8 +1,6 @@
 <!doctype html>
 <html lang="en">
 
-<link rel="stylesheet" type="text/css" href="{{ URL::asset('css/style.css') }}">
-<link rel="stylesheet" type="text/css" href="{{ URL::asset('css/bootstrap.min.css') }}">
 
 <head>
     <meta charset="UTF-8">
@@ -10,6 +8,10 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>EIS - @yield('title')</title>
+
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/bootstrap.min.css') }}">
+    @yield('add-css')
 </head>
 <body>
 <header>
@@ -28,10 +30,11 @@
     @include('layout/eis-footer')
     @include('layout/hexa-down')
 
-    <div class="footer-copyright">
-        <p>Copyright &copy; 2016 by <a href="http://fukicorp.id">FUKI Corp</a></p>
-    </div>
+    {{--<div class="footer-copyright">--}}
+        {{--<p>Copyright &copy; 2016 by <a href="http://fukicorp.id">FUKI Corp</a></p>--}}
+    {{--</div>--}}
 </footer>
 
+    @yield('scripts')
 </body>
 </html>

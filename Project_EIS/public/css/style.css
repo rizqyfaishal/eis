@@ -157,3 +157,125 @@ body {
 	margin: 0 auto;
 	margin-bottom: 1em;
 }
+
+/*OUR TEAM START HERE*/
+
+.img-team-member {
+	border-radius: 50%;
+	max-width: 200px;
+}
+
+.h-team-member {
+
+	font-size: 18px;
+	padding: 10px 50px 10px 50px;
+	text-align: justify;
+	font-weight: 900;
+}
+
+.p-team-member {
+
+}
+
+.whoweare {
+	font-family: "Avenir Book";
+	font-size: 80px;
+	font-weight: 20;
+}
+
+.post-title-team-member {
+	font-family: "Avenir Book";
+	text-align: center;
+	font-size: 36px;
+	margin-top: 3%;
+	/*padding-bottom: 20px;*/
+}
+
+.the-line {
+	border-right: 3px solid gray;
+}
+
+.dummy {
+	visibility: hidden;
+}
+
+.finance {
+	margin-top: 120px;
+}
+
+.secretary {
+	margin-top: 40px;
+}
+
+.internal-artsport {
+	margin-top: 30px;
+}
+/*
+.internal-marketing {
+	margin-top: 100px;
+}
+
+.internal-project {
+	margin-top: 100px;
+}
+*/
+.jarak-atas{
+	margin-top: 100px;
+}
+
+.pembatas-hp {
+	display: block;
+	height: 0px;
+	border: 0;
+	border-top: 0px solid black;
+	margin: 0 0;
+	padding: 0;
+	visibility: hidden;
+}
+
+@media screen and (max-width: 480px) and (min-width: 100px) {
+	.pembatas-hp {
+		display: block;
+		height: 1px;
+		border: 0;
+		border-top: 1px solid black;
+		margin: 1em 0;
+		padding: 0;
+		visibility: visible;
+	}
+}
+/*OUR TEAM END HERE*/
+
+
+
+/*OUR PROGRAM START HERE*/
+
+.title-program-page {
+	font-family: "Avenir Book";
+	font-size: 80px;
+	font-weight: 30;
+	padding-bottom: 20px;
+}
+
+.program-block {
+	border-style: double;
+}
+
+.program-block a{
+	text-decoration: none;
+	color: black;
+	font: italic;
+}
+
+.program-block-middle {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.program-img-ins {
+	padding: 20px;
+}
+
+
+
+/*OUR PROGRAM END HERE*/
