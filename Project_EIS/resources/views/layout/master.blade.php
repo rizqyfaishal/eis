@@ -14,7 +14,6 @@
 <body>
 <header>
     @include('layout/hexa-up')
-
     <div class="row header-logo">
         <img class="" src="{{ URL::asset('img/EIS_logo_text.gif') }}">
     </div>
