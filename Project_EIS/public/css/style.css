@@ -276,6 +276,9 @@ body {
 	padding: 20px;
 }
 
-
-
 /*OUR PROGRAM END HERE*/
+
+.tweet-eis {
+	overflow-y: scroll;
+	max-height: 500px;
+}
