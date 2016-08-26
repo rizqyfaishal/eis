@@ -42,3 +42,36 @@ Route::get('/social-media', function () {
 Route::get('/old', function () {
     return view('home_old');
 });
+
+//start dashboard
+Route::get('/dashboard', function () {
+    return view('dashboard-admin-home');
+});
+
+Route::get('/dashboard/inbox', function () {
+    return view('dashboard-admin-inbox');
+});
+
+Route::get('/dashboard/members', function () {
+    return view('dashboard-admin-member-manager');
+});
+
+Route::get('/dashboard/research', function () {
+    return view('dashboard-admin-randi-manager');
+});
+
+Route::get('/dashboard/event', function () {
+    return view('dashboard-admin-event-manager');
+});
+
+Route::get('/dashboard/program', function () {
+    return view('dashboard-admin-program-manager');
+});
+
+Route::get('/dashboard/eis-team', function () {
+    return view('dashboard-admin-eisteam-manager');
+});
+
+Route::get('/dashboard/send', function () {
+    return view('dashboard-admin-send');
+});

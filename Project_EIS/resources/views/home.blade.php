@@ -39,6 +39,7 @@
                 <a href="#"><h2 class="title-bold"><b>JAKARTA LIKE NEW YO..</b></h2></a>
                 <a href="#"><h2 class="title-bold"><b>NEW YORK AT UI HAS...</b></h2></a>
                 <a href="#"><h2 class="title-bold"><b>NEW YORK AT UI HAS...</b></h2></a>
+                <br>
                 <button class="btn btn-primary">Load more..</button>
             </div>
         </div>
@@ -56,6 +57,7 @@
                 <a href="#"><h3 class="title-bold"><b>JAKARTA LIKE NEW YO..</b></h3></a>
                 <a href="#"><h3 class="title-bold"><b>NEW YORK AT UI HAS...</b></h3></a>
                 <a href="#"> <h3 class="title-bold"><b>NEW YORK ON CITY</b></h3></a>
+                <br>
                 <button class="btn btn-primary">Load more..</button>
             </div>
         </div>

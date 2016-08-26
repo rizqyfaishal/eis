@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport"
+         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Dashboard Admin</title>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css">      
+   </head>
+   <body>
+      <header>
+         <div class="hexa-up">
+            <img class="" src="img/hexa_up.png">
+         </div>
+         <div class="row header-logo">
+            <img class="" src="img/EIS_logo_text.gif">
+         </div>
+         <div class="row nav-bar">
+            <nav role="navigation">
+               <ul class="nav header-ul">
+                  <li><a href="/home">Home</a></li>
+                  <li><a href="/meet-eis">Meet EIS</a></li>
+                  <li><a href="/our-program">Our Program</a></li>
+                  <li><a href="/contact-us">Contact Us</a></li>
+                  <li><a href="/ask-our-alumni">Ask Our Alumni</a></li>
+                  <li><a href="/social-media">Social Media</a></li>
+               </ul>
+            </nav>
+         </div>
+      </header>
+
+      <div class="row whole-content">
+         <div class="container">
+            <div class="row">
+               <div class="container">
+                  <div class="content content-dashboard-jamaah">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-md-3 visible-lg visible-md" id="menu-workspace">
+                              <div class="well">
+                                 <ul class="nav nav-pills nav-stacked">
+                                    <li ><a href="#">Dashboard</a></li>
+                                    <li class="nav-divider mt-5 mb-5"></li>
+                                    <li class="active"><a href="#jobs-applied">Inbox</a></li>
+                                    <li class="nav-divider mt-5 mb-5"></li>
+                                    <li><a href="#jobs-applied">Members Manager</a></li>
+                                    <li class="nav-divider mt-5 mb-5"></li>
+                                    <li><a href="#jobs-applied">R &amp; I Manager</a></li>                                    
+                                    <li class="nav-divider mt-5 mb-5"></li>
+                                    <li><a href="#jobs-applied">Events Manager</a></li>
+                                    <li class="nav-divider mt-5 mb-5"></li>
+                                    <li><a href="#jobs-applied">Programs Manager</a></li>
+                                    <li class="nav-divider mt-5 mb-5"></li>
+                                    <li><a href="#jobs-applied">EIS Team Manager</a></li>
+                                    <li class="nav-divider mt-5 mb-5"></li>
+                                    <li><a href="#jobs-applied">Send Email</a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="visible-xs visible-sm mb-10" id="menu-workspace">
+                              <div class="container">
+                                 <div class="row" style="border:none;">
+                                    <div class="col-sm-12 mb-20">
+                                       <button aria-controls="freelancer-menu" aria-expanded="false" class="btn btn-lg btn-block btn-info font2 collapsed" data-target="#freelancer-menu" data-toggle="collapse" type="button">Dashboard Menu</button>
+                                       <div style="height: 0px;" aria-expanded="false" class="collapse" id="freelancer-menu">
+                                          <div class="well mt-10">
+                                             <ul class="nav nav-pills nav-stacked">
+                                <li class="active"><a href="#">Dashboard</a></li>
+                                <li class="nav-divider mt-5 mb-5"></li>
+                                <li><a href="#jobs-applied">Inbox</a></li>
+                                <li class="nav-divider mt-5 mb-5"></li>
+                                <li><a href="#jobs-applied">Members Manager</a></li>
+                                <li class="nav-divider mt-5 mb-5"></li>
+                                <li><a href="#jobs-applied">R &amp; I Manager</a></li>                                    
+                                <li class="nav-divider mt-5 mb-5"></li>
+                                <li><a href="#jobs-applied">Events Manager</a></li>
+                                <li class="nav-divider mt-5 mb-5"></li>
+                                <li><a href="#jobs-applied">Programs Manager</a></li>
+                                <li class="nav-divider mt-5 mb-5"></li>
+                                <li><a href="#jobs-applied">EIS Team Manager</a></li>
+                                <li class="nav-divider mt-5 mb-5"></li>
+                                <li><a href="#jobs-applied">Send Email</a></li>          
+                                             </ul>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-9">
+                              <div class="well">
+                                 <h1>Inbox From Contact Us Page</h1>
+                                    <hr>
+                                    <div class="panel panel-default">
+                                       <table id="inbox_id" class="display">
+                                          <thead>
+                                             <tr>
+                                                <th>Time</th>
+                                                <th>From</th>
+                                                <th>Content</th>
+                                                <th>Action</th>
+                                                <th>Status</th>
+                                             </tr>
+                                          </thead>
+                                          <tbody>
+                                             <tr>
+                                                <th scope="row">16/08/2016</th>
+                                                <td>Luthfi Ab..</td>
+                                                <td>Halo aku mau nanya tentang..</td>
+                                                <td>
+                                                   <a href="#">view</a> 
+                                                   <a href="#">del</a> 
+                                                   <a href="#">reply</a> 
+                                                </td>
+                                                <td>Unread</td>
+                                             </tr>
+                                             <tr>
+                                                <th scope="row">16/08/2016</th>
+                                                <td>Luthfi Ab..</td>
+                                                <td>Halo aku mau nanya tentang..</td>
+                                                <td>
+                                                   <a href="#">view</a> 
+                                                   <a href="#">del</a> 
+                                                   <a href="#">reply</a> 
+                                                </td>
+                                                <td>Read</td>
+                                             </tr>
+                                             <tr>
+                                                <th scope="row">16/08/2016</th>
+                                                <td>Luthfi Ab..</td>
+                                                <td>Halo aku mau nanya tentang..</td>
+                                                <td>
+                                                   <a href="#">view</a> 
+                                                   <a href="#">del</a> 
+                                                   <a href="#">reply</a> 
+                                                </td>
+                                                <td>Replied</td>
+                                             </tr>
+                                             <tr>
+                                                <th scope="row">16/08/2016</th>
+                                                <td>Luthfi Ab..</td>
+                                                <td>Halo aku mau nanya tentang..</td>
+                                                <td>
+                                                   <a href="#">view</a> 
+                                                   <a href="#">del</a> 
+                                                   <a href="#">reply</a> 
+                                                </td>
+                                                <td>Replied</td>
+                                             </tr>
+                                             <tr>
+                                                <th scope="row">16/08/2016</th>
+                                                <td>Luthfi Ab..</td>
+                                                <td>Halo aku mau nanya tentang..</td>
+                                                <td>
+                                                   <a href="#">view</a> 
+                                                   <a href="#">del</a> 
+                                                   <a href="#">reply</a> 
+                                                </td>
+                                                <td>Replied</td>
+                                             </tr>
+                                             <tr>
+                                                <th scope="row">16/08/2016</th>
+                                                <td>Luthfi Ab..</td>
+                                                <td>Halo aku mau nanya tentang..</td>
+                                                <td>
+                                                   <a href="#">view</a> 
+                                                   <a href="#">del</a> 
+                                                   <a href="#">reply</a> 
+                                                </td>
+                                                <td>Replied</td>
+                                             </tr>
+                                             <tr>
+                                                <th scope="row">16/08/2016</th>
+                                                <td>Luthfi Ab..</td>
+                                                <td>Halo aku mau nanya tentang..</td>
+                                                <td>
+                                                   <a href="#">view</a> 
+                                                   <a href="#">del</a> 
+                                                   <a href="#">reply</a> 
+                                                </td>
+                                                <td>Replied</td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </div>
+                              </div>
+                              
+                              
+                              
+                              
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <footer>
+         <div class="hexa-down">
+            <img src="img/hexa_down.png">
+         </div>
+         <div class="eis-mark">
+            <img src="img/eis_mark.png">
+         </div>
+         <!-- <div class="row">
+            <p>Copyright &copy; 2016 by <a href="http://fukicorp.id">Fuki Corp</a></p>
+            </div> -->
+      </footer>
+      <!-- <script src="js/jquery-3.1.0.min.js"></script> -->
+      <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>    
+      <script src="js/bootstrap.min.js"></script>
+      <script type="text/javascript">
+         $(document).ready(function(){
+             $('#myTabs a').click(function (e) {
+                 e.preventDefault()
+                 $(this).tab('show')
+             });
+         });
+      </script>
+      <!-- start jquery data table -->
+      <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+      <script type="text/javascript">
+         $(document).ready(function(){
+             $('#inbox_id').DataTable();
+         });      
+      </script>
+   </body>
+</html>
+
