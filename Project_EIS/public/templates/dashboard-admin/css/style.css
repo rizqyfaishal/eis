@@ -20,40 +20,27 @@ Gray   Light: #E5DFEC
 body {
 	background-image: url("../img/bg.png");
 	background-size: cover;
-}
-
-.font-avenir-book{
-	font-family: 'Avenir Book';
+	width: 100%;
 }
 
 .hexa-up {
 	position: fixed;
 	left: 68%;
-	z-index: -1;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";       /* IE 8 */
-	filter: alpha(opacity=70);  /* IE 5-7 */
-	-moz-opacity: 0.7;          /* Netscape */
-	-khtml-opacity: 0.7;        /* Safari 1.x */
-	opacity: 0.7;               /* Good browsers */
+	z-index: -100;
 }
 
 .hexa-down {
 	position: fixed;
 	top: 85%;
 	left: 70%;
-	z-index: -1;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";       /* IE 8 */
-	filter: alpha(opacity=70);  /* IE 5-7 */
-	-moz-opacity: 0.7;          /* Netscape */
-	-khtml-opacity: 0.7;        /* Safari 1.x */
-	opacity: 0.7;               /* Good browsers */
+	z-index: -100;
 }
 
 .eis-mark {
 	position: fixed;
 	left: 2%;
 	top: 90%;
-	z-index: -1;
+	z-index: -100;
 }
 
 .header-logo {
@@ -64,17 +51,10 @@ body {
 
 .header-logo img {
 	padding-top: 2%;
-	display: block;
-	margin: 0 auto;
 }
 
 .nav-bar {
 	background-color: #9d9d9d;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";       /* IE 8 */
-	filter: alpha(opacity=70);  /* IE 5-7 */
-	-moz-opacity: 0.7;          /* Netscape */
-	-khtml-opacity: 0.7;        /* Safari 1.x */
-	opacity: 0.7;               /* Good browsers */
 	padding-top: 1em;
 	padding-bottom: 1em;
 	margin-top: 2%;
@@ -98,16 +78,6 @@ body {
 	border: none;
 }
 
-.header-ul li a:visited, .header-ul li a:link {
-	text-decoration: none;
-	color: white;
-}
-
-.header-ul li a:active, .header-ul li a:hover {
-	text-decoration: none;
-	color: gray;
-}
-
 .post-title {
 	font-family: "Avenir Book";
 	text-align: center;
@@ -129,7 +99,6 @@ body {
 }
 
 .content-upcoming {
-
 }
 
 .article p {
@@ -139,42 +108,32 @@ body {
 	text-align: justify;
 }
 
-.footer-copyright {
-	align-items: center;
-	display: flex;
-	justify-content: center;
-	margin-top: 3%;
-}
-
-.footer-copyright p a:visited, .footer-copyright p a:link {
+a {
 	text-decoration: none;
 	color: white;
 }
 
-.footer-copyright p a:hover, .footer-copyright p a:active {
+a:hover, a:active, a:link {
 	text-decoration: none;
-	color: gray;
+	color: white;
 }
 
-/*CONTACT US STARTS HERE*/
-#maps {
-	height:450px;
-	width: 500px;
-	display: block;
-	margin: 0 auto;
-	margin-bottom: 1em;
-}
-/*CONTACT US ENDS HERE*/
+/*a:visited {
+	text-decoration: none;
+	color: white;
+}*/
+
+
 
 /*OUR TEAM START HERE*/
 
 .img-team-member {
 	border-radius: 50%;
-	max-width: 200px;
+	max-width: 200px;			
 }
 
 .h-team-member {
-
+	
 	font-size: 18px;
 	padding: 10px 50px 10px 50px;
 	text-align: justify;
@@ -233,23 +192,23 @@ body {
 
 .pembatas-hp {
 	display: block;
-	height: 0px;
-	border: 0;
-	border-top: 0px solid black;
-	margin: 0 0;
-	padding: 0;
-	visibility: hidden;
+    height: 0px;
+    border: 0;
+    border-top: 0px solid black;
+    margin: 0 0;
+    padding: 0;
+    visibility: hidden;
 }
 
-@media screen and (max-width: 480px) and (min-width: 100px) {
-	.pembatas-hp {
+@media screen and (max-width: 480px) and (min-width: 100px) {    
+    .pembatas-hp {
 		display: block;
-		height: 1px;
-		border: 0;
-		border-top: 1px solid black;
-		margin: 1em 0;
-		padding: 0;
-		visibility: visible;
+	    height: 1px;
+	    border: 0;
+	    border-top: 1px solid black;
+	    margin: 1em 0;
+	    padding: 0;
+	    visibility: visible;
 	}
 }
 /*OUR TEAM END HERE*/
@@ -284,9 +243,6 @@ body {
 	padding: 20px;
 }
 
-/*OUR PROGRAM END HERE*/
 
-.tweet-eis {
-	overflow-y: scroll;
-	max-height: 500px;
-}
+
+/*OUR PROGRAM END HERE*/

@@ -261,8 +261,7 @@
 @endsection
 
 @section('scripts')
-    <script src="{{ URL::asset('js/jquery-2.2.0.min.js') }}" type="text/javascript"></script>
-    <script src="{{ URL::asset('js/slick.js') }}" type="text/javascript" charset="utf-8"></script>
+
     <script type="text/javascript">
         $(document).on('ready', function() {
             $(".regular").slick({
@@ -324,5 +323,4 @@
 
         });
     </script>
-    <script src="{{ URL::asset('js/bootstrap.min.js') }}"></script>
 @endsection

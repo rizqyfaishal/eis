@@ -11,25 +11,26 @@
 
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/style.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/bootstrap.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/jquery.dataTables.min.css') }}">
     @yield('add-css')
 </head>
 <body>
 <header>
-
     @include('layout/hexa-up')
-    <div class="container">
-        <div class="row header-logo">
-            <div class="col-lg-12">
-                <img class="" src="{{ URL::asset('img/EIS_logo_text.gif') }}">
-            </div>
-        </div>
+    <div class="row header-logo">
+        <img class="" src="{{ URL::asset('img/EIS_logo_text.gif') }}">
     </div>
     @include('layout/nav-bar')
+
 </header>
 
-    <div class="container">
+<div class="container">
+    <div class="row">
+        @include('layout/nav-dashboard')
         @yield('content')
     </div>
+</div>
+
 
 <footer>
     @include('layout/eis-footer')
@@ -42,6 +43,7 @@
     <script src="{{ URL::asset('js/jquery-2.2.0.min.js') }}" type="text/javascript"></script>
     <script src="{{ URL::asset('js/slick.js') }}" type="text/javascript" charset="utf-8"></script>
     <script src="{{ URL::asset('js/bootstrap.min.js') }}"></script>
+    <script src="{{ URL::asset('js/jquery.dataTables.min.js') }}" type="text/javascript"></script>
     @yield('scripts')
 </body>
 </html>
