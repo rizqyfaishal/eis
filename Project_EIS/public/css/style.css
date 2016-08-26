@@ -22,6 +22,10 @@ body {
 	background-size: cover;
 }
 
+.font-avenir-book{
+	font-family: 'Avenir Book';
+}
+
 .hexa-up {
 	position: fixed;
 	left: 68%;
@@ -150,6 +154,7 @@ body {
 	color: gray;
 }
 
+/*CONTACT US STARTS HERE*/
 #maps {
 	height:450px;
 	width: 500px;
@@ -157,6 +162,7 @@ body {
 	margin: 0 auto;
 	margin-bottom: 1em;
 }
+/*CONTACT US ENDS HERE*/
 
 /*OUR TEAM START HERE*/
 

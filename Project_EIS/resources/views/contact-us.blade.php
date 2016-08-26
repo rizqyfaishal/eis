@@ -8,7 +8,7 @@
 
 @section('content')
         <div class="row text-center font-avenir-book">
-            <h1>CONTACT US</h1>
+            <h1 class="title-program-page">CONTACT US</h1>
         </div>
         <div class="row">
 
