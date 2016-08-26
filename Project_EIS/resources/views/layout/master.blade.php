@@ -15,15 +15,21 @@
 </head>
 <body>
 <header>
+
     @include('layout/hexa-up')
-    <div class="row header-logo">
-        <img class="" src="{{ URL::asset('img/EIS_logo_text.gif') }}">
+    <div class="container">
+        <div class="row header-logo">
+            <div class="col-lg-12">
+                <img class="" src="{{ URL::asset('img/EIS_logo_text.gif') }}">
+            </div>
+        </div>
     </div>
     @include('layout/nav-bar')
-
 </header>
 
-    @yield('content')
+    <div class="container">
+        @yield('content')
+    </div>
 
 <footer>
     @include('layout/eis-footer')
