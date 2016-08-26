@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Route::get('/home', function () {
@@ -42,3 +42,6 @@ Route::get('/social-media', function () {
 Route::get('/old', function () {
     return view('home_old');
 });
+
+Route::auth();
+
