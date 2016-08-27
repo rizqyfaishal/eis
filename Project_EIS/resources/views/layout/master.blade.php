@@ -9,8 +9,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>EIS - @yield('title')</title>
 
-    <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/style.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/bootstrap.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/font-awesome.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/style.css') }}">
+
     @yield('add-css')
 </head>
 <body>
@@ -43,5 +45,6 @@
     <script src="{{ URL::asset('js/slick.js') }}" type="text/javascript" charset="utf-8"></script>
     <script src="{{ URL::asset('js/bootstrap.min.js') }}"></script>
     @yield('scripts')
+    @yield('codingan-angular')
 </body>
 </html>

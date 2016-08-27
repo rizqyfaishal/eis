@@ -56,18 +56,20 @@ trait RegistersUsers
      */
     public function register(Request $request)
     {
-//        $validator = $this->validator($request->all());
+        $validator = $this->validator($request->all());
+
+        if ($validator->fails()) {
+            $this->throwValidationException(
+                $request, $validator
+            );
+        }
+
+        $user = $this->create($request->all());
+        return $user;
+//        Auth::guard($this->getGuard())->login($this->create($request->all()));
 //
-//        if ($validator->fails()) {
-//            $this->throwValidationException(
-//                $request, $validator
-//            );
-//        }
-
-        Auth::guard($this->getGuard())->login($this->create($request->all()));
-
-//        return redirect($this->redirectPath());
-        return Auth::user();
+////        return redirect($this->redirectPath());
+//        return Auth::user();
     }
 
     /**
@@ -80,11 +82,14 @@ trait RegistersUsers
         return property_exists($this, 'guard') ? $this->guard : null;
     }
 
+
     protected function create(array $data)
     {
         return User::create([
-            'email' => $data['email'],
+            'fname' => $data['fname'],
+            'lname' => $data['lname'],
             'phone' => $data['phone'],
+            'email' => $data['email'],
             'password' => bcrypt($data['password']),
         ]);
     }

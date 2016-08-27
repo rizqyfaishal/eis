@@ -19,6 +19,7 @@ class CreateAdminsTable extends Migration
             $table->string('city');
             $table->string('postal_code');
             $table->softDeletes();
+            $table->timestamps();
             $table->string('description');
         });
     }

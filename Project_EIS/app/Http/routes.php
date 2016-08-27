@@ -11,9 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/','PageController@index');
+Route::get('/auth','PageController@auth');
 
 Route::get('/home', function () {
     return view('home');
@@ -50,9 +49,7 @@ Route::get('/login', function () {
 });
 
 //start dashboard
-Route::get('/dashboard', function () {
-    return view('dashboard-admin-home');
-});
+Route::get('/dashboard', 'DashboardController@home');
 
 Route::get('/dashboard/inbox', function () {
     return view('dashboard-admin-inbox');
@@ -81,3 +78,11 @@ Route::get('/dashboard/eis-team', function () {
 Route::get('/dashboard/send', function () {
     return view('dashboard-admin-send');
 });
+
+Route::post('auth','Auth\AuthController@postLogin');
+Route::post('auth-alumni','AlumniController@reg');
+Route::post('auth-f-student','FutureStudentController@reg');
+Route::post('auth-student','StudentController@reg');
+
+Route::get('/api/unique/{email}','PageController@checkUnique');
+Route::get('success','PageController@registerSuccess');

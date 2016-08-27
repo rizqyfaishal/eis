@@ -62,6 +62,9 @@ body {
 	justify-content: center;
 }
 
+.whole-content {
+	padding-bottom: 5em;
+}
 .header-logo img {
 	padding-top: 2%;
 	display: block;
@@ -254,14 +257,17 @@ body {
 }
 /*OUR TEAM END HERE*/
 
-
+.dashboard-content {
+	padding-top: 2em;
+	padding-bottom: 3em;
+}
 
 /*OUR PROGRAM START HERE*/
 
 .title-program-page {
 	font-family: "Avenir Book";
 	font-size: 80px;
-	font-weight: 30;
+	font-weight: bold;
 	padding-bottom: 20px;
 }
 
@@ -269,10 +275,44 @@ body {
 	border-style: double;
 }
 
+.input-group-addon {
+	min-width: 12em;
+	text-align: left;
+}
+
+.auth-form{
+	padding-top: 3em;
+	padding-bottom: 3em;
+}
+
+.dataTables_wrapper {
+	padding: 1em 2em;
+}
+#register .auth-form {
+	padding-top: 1em;
+	padding-bottom: 3em;}
 .program-block a{
 	text-decoration: none;
 	color: black;
-	font: italic;
+	font-style: italic;
+}
+
+.login {
+	padding-bottom: 3em;
+}
+
+.login-section {
+	padding-top: 2em;
+}
+.tab-pane.active {
+	background-color: #ffffff;
+	border: 1px solid #ddd;
+	border-radius: 4px 4px 0 0;
+	border-top: none;
+}
+
+.tab-pane .select-category-area {
+	padding-top: 2em;
 }
 
 .program-block-middle {
