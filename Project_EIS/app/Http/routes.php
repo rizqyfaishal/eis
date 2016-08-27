@@ -55,9 +55,7 @@ Route::get('/dashboard/inbox', function () {
     return view('dashboard-admin-inbox');
 });
 
-Route::get('/dashboard/members', function () {
-    return view('dashboard-admin-member-manager');
-});
+Route::get('/dashboard/members', 'DashboardController@membersManager');
 
 Route::get('/dashboard/research', function () {
     return view('dashboard-admin-randi-manager');
