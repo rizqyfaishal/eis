@@ -8,7 +8,9 @@
         "php": ">=5.5.9",
         "laravel/framework": "5.2.*",
         "laravelcollective/html": "^5.2",
-        "barryvdh/laravel-elfinder": "^0.3.8"
+        "barryvdh/laravel-elfinder": "^0.3.8",
+        "snowfire/beautymail": "^1.0",
+        "hashids/hashids": "^1.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

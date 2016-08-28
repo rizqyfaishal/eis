@@ -17,10 +17,10 @@ class RedirectIfNotAdmin
     public function handle($request, Closure $next,$guard = null)
     {
         if (!Auth::guard($guard)->check()) {
-            return redirect('/auth');
+            return redirect('/login');
         }
         if (!Auth::user()->isAdmin()) {
-            return redirect('/auth');
+            return redirect('/login');
         }
         return $next($request);
     }

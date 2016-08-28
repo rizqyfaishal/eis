@@ -9,7 +9,7 @@
 @section('content')
 
     <div class="col-md-9">
-        <a href="#">
+        <a href="{{ action('DashboardController@createEvent') }}">
             <div class="text-center well">
                 <h3><b>+ Create New Post Event</b></h3>
             </div>
@@ -24,8 +24,10 @@
                 <table id="event_id" class="display">
                     <thead>
                     <tr>
-                        <th>Time</th>
+                        <th>Time Created</th>
                         <th>Title</th>
+                        <th>Location</th>
+                        <th>Waktu</th>
                         <th>Content</th>
                         <th>Action</th>
                     </tr>
@@ -34,65 +36,7 @@
                     <tr>
                         <th scope="row">16/08/2016</th>
                         <td>NEW YORK ON CITY</td>
-                        <td>So, this is the city of am..</td>
-                        <td>
-                            <a href="#">view</a>
-                            <a href="#">del</a>
-                            <a href="#">edit</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">16/08/2016</th>
                         <td>NEW YORK ON CITY</td>
-                        <td>So, this is the city of am..</td>
-                        <td>
-                            <a href="#">view</a>
-                            <a href="#">del</a>
-                            <a href="#">edit</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">16/08/2016</th>
-                        <td>NEW YORK ON CITY</td>
-                        <td>So, this is the city of am..</td>
-                        <td>
-                            <a href="#">view</a>
-                            <a href="#">del</a>
-                            <a href="#">edit</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">16/08/2016</th>
-                        <td>NEW YORK ON CITY</td>
-                        <td>So, this is the city of am..</td>
-                        <td>
-                            <a href="#">view</a>
-                            <a href="#">del</a>
-                            <a href="#">edit</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">16/08/2016</th>
-                        <td>NEW YORK ON CITY</td>
-                        <td>So, this is the city of am..</td>
-                        <td>
-                            <a href="#">view</a>
-                            <a href="#">del</a>
-                            <a href="#">edit</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">16/08/2016</th>
-                        <td>NEW YORK ON CITY</td>
-                        <td>So, this is the city of am..</td>
-                        <td>
-                            <a href="#">view</a>
-                            <a href="#">del</a>
-                            <a href="#">edit</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">16/08/2016</th>
                         <td>NEW YORK ON CITY</td>
                         <td>So, this is the city of am..</td>
                         <td>

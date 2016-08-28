@@ -5,10 +5,15 @@ namespace App\Http\Controllers;
 use App\Admin;
 use App\Alumni;
 use App\FutureStudent;
+use App\Message;
 use App\Student;
+use App\User;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Session;
 
 class DashboardController extends Controller
 {
@@ -31,5 +36,136 @@ class DashboardController extends Controller
         ]);
     }
 
+    public function gantiPassword(){
+        return view('dashboard-admin-ganti-password');
+    }
 
+    public function update(Requests\ChangePasswordRequest $request)
+    {
+        $user = Auth::user();
+        if(!Hash::check($request->input('old_password'), $user->password)) {
+            Session::flash('change_password_failed','Password lama tidak valid!');
+            return redirect()->back();
+        }
+        $user->password = bcrypt($request->input('password'));
+        $user->save();
+        Session::flash('change_password_success','Penggantian Password Sukses!');
+        return redirect()->back();
+    }
+
+    public function editAkun(){
+        $admin = Auth::user()->user;
+        if(is_null($admin)){
+            return redirect(action('Auth\AuthController@showLoginForm'));
+        }
+        return view('dashboard-admin-edit-akun')->with([
+            'admin' => $admin
+        ]);
+    }
+
+
+    public function inbox(){
+        $messages = Message::all();
+        return view('dashboard-admin-inbox')->with([
+            'messages' => $messages
+        ]);
+    }
+
+    public function messageView($id){
+        $message = Message::find($id);
+        if(is_null($message)){
+            abort(404);
+        }
+        return view('dashboard-admin-message-view')->with([
+            'message' => $message
+        ]);
+    }
+
+    public function messageReply($id){
+        $message = Message::find($id);
+        if(is_null($message)){
+            abort(404);
+        }
+        return view('dashboard-admin-reply-message')->with([
+            'email' => $message->email_from
+        ]);
+    }
+
+    public function messageDelete($id){
+        $message = Message::find($id);
+        if(is_null($message)){
+            abort(404);
+        }
+        return view('dashboard-admin-message-delete')->with([
+            'message' => $message
+        ]);
+    }
+
+    public function toggleStatusRejected($id){
+        $user = User::find($id);
+        if(is_null($user)){
+            abort(404);
+        }
+        $user->status = 2;
+        $user->save();
+        Session::flash('user_rejected',$user->fname . ' ' .$user->lname. ' (' . $user->email.') Rejected!');
+        return redirect()->back();
+    }
+
+    public function toggleStatusAccepted($id){
+        $user = User::find($id);
+        if(is_null($user)){
+            abort(404);
+        }
+        $user->status = 1;
+        $user->save();
+
+        Session::flash('user_accepted',$user->fname . ' ' .$user->lname. ' (' . $user->email.') Accepted!');
+        return redirect()->back();
+    }
+
+    public function delete($id){
+        $user = User::find($id);
+        if(is_null($user)){
+            abort(404);
+        }
+        $user->user->delete();
+        $user->delete();
+        Session::flash('user_deleted',$user->fname . ' ' .$user->lname. ' (' . $user->email.') Deleted!');
+        return redirect()->back();
+    }
+
+    public function deleteAlumniConfirmation($id){
+        $alumni = Alumni::find($id);
+        if(is_null($alumni)){
+            abort(404);
+        }
+        return view('dashboard-admin-delete-alumni-confirm')->with([
+            'alumni' => $alumni
+        ]);
+    }
+
+    public function deleteFStudentConfirmation($id){
+        $fSTudent = FutureStudent::find($id);
+        if(is_null($fSTudent)){
+            abort(404);
+        }
+        return view('dashboard-admin-delete-f-student-confirm')->with([
+            'fStudent' => $fSTudent
+        ]);
+    }
+
+    public function deleteStudentConfirmation($id){
+        $student = Student::find($id);
+        if(is_null($student)){
+            abort(404);
+        }
+        return view('dashboard-admin-delete-student-confirm')->with([
+            'student' => $student
+        ]);
+    }
+
+    public function createEvent(){
+        return view('dashboard-admin-create-event');
+    }
 }

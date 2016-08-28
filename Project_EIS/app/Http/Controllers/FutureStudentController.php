@@ -45,4 +45,15 @@ class FutureStudentController extends Controller
         return redirect($this->redirectTo);/**/
     }
 
+    public function delete($id){
+        $fStudent = FutureStudent::find($id);
+        if(is_null( $fStudent)){
+            abort(500);
+        }
+        $fStudent->user->delete();
+        $fStudent->delete();
+        Session::flash('future_student_deleted',true);
+        return redirect(action('DashboardController@membersManager'));
+    }
+
 }

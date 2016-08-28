@@ -43,4 +43,15 @@ class StudentController extends Controller
         Session::flash('register-success',true);
         return redirect($this->redirectTo);/**/
     }
+
+    public function delete($id){
+        $Student = Student::find($id);
+        if(is_null( $Student)){
+            abort(500);
+        }
+        $Student->user->delete();
+        $Student->delete();
+        Session::flash('student_deleted',true);
+        return redirect(action('DashboardController@membersManager'));
+    }
 }

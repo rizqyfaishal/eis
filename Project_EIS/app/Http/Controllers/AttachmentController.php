@@ -14,10 +14,6 @@ class AttachmentController extends Controller
 
     use AttachmentHelper;
 
-    public function __construct(PageDescription $page)
-    {
-//        $this->middleware('auth-admin');
-    }
 
     public function index(){
         return response()->json([

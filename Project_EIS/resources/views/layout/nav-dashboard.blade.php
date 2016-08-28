@@ -17,7 +17,7 @@
             <li class="nav-divider mt-5 mb-5"></li>
             <li><a href="/dashboard/send">Send Email</a></li>
             <li class="nav-divider mt-5 mb-5"></li>
-            <li><a href="/dashboard/send">Ganti Password</a></li>
+            <li><a href="{{ action('DashboardController@gantiPassword') }}">Ganti Password</a></li>
         </ul>
     </div>
 </div>
