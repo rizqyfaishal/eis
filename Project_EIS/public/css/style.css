@@ -111,6 +111,53 @@ body {
 	color: gray;
 }
 
+.floating-widget {
+	position: fixed;
+	left: 96%;
+	top: 30%;
+	height: 200px;
+	width: 80px;
+	border-radius: 10px;
+	background-color: white;
+}
+
+.floating-widget ul {
+	display: table;
+}
+
+.floating-widget ul li {
+	list-style: none;
+	font-size: 56px;
+	line-height: 60px;
+}
+
+.icon-facebook {
+	position: absolute;
+	left: 20%;
+	top: 5%;
+	color: darkblue;
+	border-radius: 10px;
+	background-color: white;
+}
+
+.icon-twitter {
+	position: absolute;
+	left: 20%;
+	top: 35%;
+	color: dodgerblue;
+	border-radius: 10px;
+	background-color: white;
+}
+
+.icon-google {
+	position: absolute;
+	left: 20%;
+	top: 65%;
+	color: red;
+	border-radius: 10px;
+	background-color: white;
+}
+
 .post-title {
 	font-family: "Avenir Book";
 	text-align: center;
