@@ -43,4 +43,42 @@ class EventController extends Controller
         ]);
     }
 
+    public function edit($id){
+        $event = Event::find($id);
+        if(is_null($event)){
+            abort(404);
+        }
+        return view('dashboard-admin-edit-event')->with([
+            'event' => $event
+        ]);
+    }
+
+    public function update($id,Requests\EventUpdateRequest $request){
+        $event = Event::find($id);
+        if(is_null($event)){
+            abort(404);
+        }
+        $t = $event->update($request->all());
+        if($request->hasFile('thumbnail')){
+            $this->updateFile($request->file('thumbnail'),$event->thumbnail());
+        }
+        if(!$t){
+            abort(500);
+        }
+        Session::flash('event_updated','Event Update');
+        return redirect(action('DashboardController@eventManager'));
+    }
+
+    public function delete($id){
+        $event = Event::find($id);
+        if(is_null($event)){
+            abort(404);
+        }
+        if($event->delete()){
+            Session::flash('event_deleted',true);
+            return redirect(action('DashboardController@eventManager'));
+        }
+        abort(500);
+    }
+
 }

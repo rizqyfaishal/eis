@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Admin;
 use App\Alumni;
+use App\Event;
 use App\FutureStudent;
 use App\Message;
 use App\Student;
@@ -170,6 +171,18 @@ class DashboardController extends Controller
     }
 
     public function eventManager(){
-        return 
+        return view('dashboard-admin-event-manager')->with([
+            'events' => Event::all()
+        ]);
+    }
+
+    public function eventDeleteConfirm($id){
+        $event = Event::find($id);
+        if(is_null($event)){
+            abort(404);
+        }
+        return view('dashboard-admin-delete-event-confirm')->with([
+            'event' => $event
+        ]);
     }
 }

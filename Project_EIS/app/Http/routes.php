@@ -55,14 +55,16 @@ Route::get('/dashboard/inbox/{id}/delete','DashboardController@messageDelete');
 Route::get('/dashboard/members', 'DashboardController@membersManager');
 Route::get('/dashboard/events/create', 'DashboardController@createEvent');
 Route::post('/dashboard/events/save', 'EventController@store');
+Route::get('/dashboard/events/{id}/edit', 'EventController@edit');
+Route::patch('/dashboard/events/{id}/edit', 'EventController@update');
+Route::get('/dashboard/events/{id}/delete/confirm', 'DashboardController@eventDeleteConfirm');
+Route::delete('/dashboard/events/{id}/delete', 'EventController@delete');
 
 Route::get('/dashboard/research', function () {
     return view('dashboard-admin-randi-manager');
 });
 
-Route::get('/dashboard/event', function () {
-    return view('dashboard-admin-event-manager');
-});
+Route::get('/dashboard/event', 'DashboardController@eventManager');
 
 Route::get('/dashboard/program', function () {
     return view('dashboard-admin-program-manager');
