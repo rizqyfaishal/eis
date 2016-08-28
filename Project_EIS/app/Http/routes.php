@@ -77,6 +77,10 @@ Route::get('/dashboard/send', function () {
     return view('dashboard-admin-send');
 });
 
+Route::get('/post', function () {
+    return view('viewpost');
+});
+
 Route::post('auth','Auth\AuthController@postLogin');
 Route::post('auth-alumni','AlumniController@reg');
 Route::post('auth-f-student','FutureStudentController@reg');
@@ -84,3 +88,4 @@ Route::post('auth-student','StudentController@reg');
 
 Route::get('/api/unique/{email}','PageController@checkUnique');
 Route::get('success','PageController@registerSuccess');
+
