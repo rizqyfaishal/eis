@@ -29,6 +29,14 @@
     @include('layout/nav-bar')
 </header>
 
+    <div class="floating-widget">
+        <ul>
+            <li><a href="#"><i class="icon-facebook fa fa-facebook-square"></i></a></li>
+            <li><a href="#"><i class="icon-twitter fa fa-twitter-square"></i></a></li>
+            <li><a href="#"><i class="icon-google fa fa-google-plus-square"></i></a></li>
+        </ul>
+    </div>
+
     <div class="container">
         @yield('content')
     </div>
