@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Admin;
 use App\Helper\RegistersUsers;
 use App\User;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
@@ -16,13 +17,8 @@ class PageController extends Controller
 
     use RegistersUsers;
 
-
     public function index(){
         return view('home');
-    }
-
-    public function auth(){
-        return view('login');
     }
 
     public function checkUnique($email){
@@ -42,6 +38,36 @@ class PageController extends Controller
             return view('register-success');
         }
         return redirect('/');
+    }
+
+    public function meetEIS(){
+        $description = Admin::first()->description;
+        return view('meet-eis')->with([
+            'description' => $description
+        ]);
+    }
+
+    public function meet(){
+        $description = Admin::first()->description;
+        return view('meet')->with([
+            'description' => $description
+        ]);
+    }
+
+    public function contactUs(){
+        $auth = Auth::user();
+        $authAvailable = false;
+        if(!is_null($auth)){
+            $authAvailable = true;
+            return view('contact-us')->with([
+                'authAvailable' => $authAvailable,
+                'email' => $auth->email,
+                'name' => $auth->fname .' '.$auth->lname
+            ]);
+        }
+        return view('contact-us')->with([
+            'authAvailable' => $authAvailable
+        ]);
     }
 
 

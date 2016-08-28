@@ -266,9 +266,28 @@ body {
 
 .title-program-page {
 	font-family: "Avenir Book";
-	font-size: 80px;
+	font-size: 60px;
 	font-weight: bold;
 	padding-bottom: 20px;
+}
+
+.form-contact-us {
+	padding: 2em;
+	border-radius: 4px;
+	background-color: #ffffff;
+}
+
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th {
+    vertical-align: middle!important;
+}
+
+.table form {
+    display: inline-block;
 }
 
 .program-block {
@@ -277,7 +296,12 @@ body {
 
 .input-group-addon {
 	min-width: 12em;
-	text-align: left;
+	text-align: left!important;
+}
+
+.form-change .input-group-addon{
+	min-width: 14em;
+	text-align: left!important;
 }
 
 .auth-form{

@@ -49,6 +49,8 @@
     <script src="{{ URL::asset('js/slick.js') }}" type="text/javascript" charset="utf-8"></script>
     <script src="{{ URL::asset('js/bootstrap.min.js') }}"></script>
     <script src="{{ URL::asset('js/datatables.min.js') }}" type="text/javascript"></script>
+    @yield('date-time-picker')
     @yield('scripts')
+    @yield('tiny-mce')
 </body>
 </html>

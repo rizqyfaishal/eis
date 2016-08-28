@@ -10,6 +10,27 @@
     <div class="col-md-12">
         <div class="well">
             <h1>Members Manager</h1>
+            @if(\Illuminate\Support\Facades\Session::has('user_accepted'))
+                <div class="alert alert-success alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                    <strong>Warning! &nbsp;</strong>{{ \Illuminate\Support\Facades\Session::get('user_accepted') }}
+                </div>
+            @endif
+            @if(\Illuminate\Support\Facades\Session::has('user_rejected'))
+                <div class="alert alert-warning alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                    <strong>Warning! &nbsp;</strong>{{ \Illuminate\Support\Facades\Session::get('user_rejected') }}
+                </div>
+            @endif
+            @if(\Illuminate\Support\Facades\Session::has('user_deleted'))
+                <div class="alert alert-danger alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                    <strong>Warning! &nbsp;</strong>{{ \Illuminate\Support\Facades\Session::get('user_deleted') }}
+                </div>
+            @endif
         </div>
         <div class="well">
             <h1>Daftar Alumni</h1>
@@ -37,11 +58,22 @@
                             <td>{{ $alumni->batch }}</td>
                             <td>{{ $alumni->user->email }}</td>
                             <td>{{ $alumni->user->phone }}</td>
-                            <td>{{ $alumni->user->isAccepted }}</td>
+                            <td>{{ $alumni->user->status }}</td>
                             <td>
-                                <a href="#">accept</a>
-                                <a href="#">reject</a>
-                                <a href="#">delete</a>
+                                <form method="POST" action="{{ action('DashboardController@toggleStatusAccepted',$alumni->user->id) }}">
+                                    <input type="hidden" name="_method" value="PATCH">
+                                    {{ csrf_field() }}
+                                    <button type="submit" class="btn btn-primary"><i class="fa fa-check">&nbsp;</i>Accept</button>
+                                </form>
+
+                                <form method="POST" action="{{ action('DashboardController@toggleStatusRejected',$alumni->user->id) }}">
+                                    <input type="hidden" name="_method" value="PATCH">
+                                    {{ csrf_field() }}
+                                    <button type="submit" class="btn btn-warning"><i class="fa fa-times">&nbsp;</i>Reject</button>
+                                </form>
+                                <a href="{{ action('DashboardController@deleteAlumniConfirmation',$alumni->id) }}" class="btn btn-danger">
+                                    <i class="fa fa-trash">&nbsp;</i> Delete
+                                </a>
                             </td>
                         </tr>
                     @endforeach
@@ -75,10 +107,22 @@
                             <td>{{ $fStudent->school }}</td>
                             <td>{{ $fStudent->user->email }}</td>
                             <td>{{ $fStudent->user->phone }}</td>
-                            <td>{{ $fStudent->user->isAccepted }}</td>
+                            <td>{{ $fStudent->user->status }}</td>
                             <td>
-                                <a href="#">accept</a>
-                                <a href="#">reject</a>
+                                <form method="POST" action="{{ action('DashboardController@toggleStatusAccepted',$fStudent->user->id) }}">
+                                    <input type="hidden" name="_method" value="PATCH">
+                                    {{ csrf_field() }}
+                                    <button type="submit" class="btn btn-primary"><i class="fa fa-check">&nbsp;</i>Accept</button>
+                                </form>
+
+                                <form method="POST" action="{{ action('DashboardController@toggleStatusRejected',$fStudent->user->id) }}">
+                                    <input type="hidden" name="_method" value="PATCH">
+                                    {{ csrf_field() }}
+                                    <button type="submit" class="btn btn-warning"><i class="fa fa-times">&nbsp;</i>Reject</button>
+                                </form>
+                                <a href="{{ action('DashboardController@deleteFStudentConfirmation',$fStudent->id) }}" class="btn btn-danger">
+                                    <i class="fa fa-trash">&nbsp;</i> Delete
+                                </a>
                             </td>
                         </tr>
                     @endforeach
@@ -94,11 +138,11 @@
                     <thead>
                     <tr>
                         <th>Time Join</th>
-                        <th>FName</th>
-                        <th>LName</th>
+                        <th>Name</th>
                         <th>NPM</th>
                         <th>Major</th>
                         <th>Batch</th>
+                        <th>Email</th>
                         <th>Phone</th>
                         <th>Status</th>
                         <th>Action</th>
@@ -114,10 +158,22 @@
                             <td>{{ $cStudent->batch }}</td>
                             <td>{{ $cStudent->user->email }}</td>
                             <td>{{ $cStudent->user->phone }}</td>
-                            <td>{{ $cStudent->user->isAccepted }}</td>
+                            <td>{{ $cStudent->user->status }}</td>
                             <td>
-                                <a href="#">accept</a>
-                                <a href="#">reject</a>
+                                <form method="POST" action="{{ action('DashboardController@toggleStatusAccepted',$cStudent->user->id) }}">
+                                    <input type="hidden" name="_method" value="PATCH">
+                                    {{ csrf_field() }}
+                                    <button type="submit" class="btn btn-primary"><i class="fa fa-check">&nbsp;</i>Accept</button>
+                                </form>
+
+                                <form method="POST" action="{{ action('DashboardController@toggleStatusRejected',$cStudent->user->id) }}">
+                                    <input type="hidden" name="_method" value="PATCH">
+                                    {{ csrf_field() }}
+                                    <button type="submit" class="btn btn-warning"><i class="fa fa-times">&nbsp;</i>Reject</button>
+                                </form>
+                                <a href="{{ action('DashboardController@deleteStudentConfirmation',$cStudent->id) }}" class="btn btn-danger">
+                                    <i class="fa fa-trash">&nbsp;</i> Delete
+                                </a>
                             </td>
                         </tr>
                     @endforeach

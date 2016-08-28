@@ -53,8 +53,16 @@
             <div class="col-lg-10">: Admin</div>
         </div>
         <div class="row">
+            <div class="col-lg-2">
+                <p>Deskripsi</p>
+            </div>
+            <div class="col-lg-10">
+                <p>: {{ $admin->description }}</p>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-lg-3">
-                <a href="#" class="btn btn-primary btn-block btn-md"><i class="fa fa-wrench">&nbsp;</i>Edit Informasi Akun</a>
+                <a href="{{ action('DashboardController@editAkun') }}" class="btn btn-primary btn-block btn-md"><i class="fa fa-wrench">&nbsp;</i>Edit Informasi Akun</a>
             </div>
         </div>
     </div>
