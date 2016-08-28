@@ -12,95 +12,38 @@
     <div class="well">
         <h1>Inbox From Contact Us Page</h1>
         <hr>
+        @if(\Illuminate\Support\Facades\Session::has('delete_success'))
+            <div class="alert alert-danger alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                <strong>Delete Sukses! &nbsp;</strong>
+            </div>
+        @endif
         <div class="panel panel-default">
-            <table id="inbox_id" class="display">
+            <table id="inbox_id" class="display table table-hover table-striped">
                 <thead>
                 <tr>
                     <th>Time</th>
                     <th>From</th>
                     <th>Content</th>
-                    <th>Action</th>
                     <th>Status</th>
+                    <th>Action</th>
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <th scope="row">16/08/2016</th>
-                    <td>Luthfi Ab..</td>
-                    <td>Halo aku mau nanya tentang..</td>
-                    <td>
-                        <a href="#">view</a>
-                        <a href="#">del</a>
-                        <a href="#">reply</a>
-                    </td>
-                    <td>Unread</td>
-                </tr>
-                <tr>
-                    <th scope="row">16/08/2016</th>
-                    <td>Luthfi Ab..</td>
-                    <td>Halo aku mau nanya tentang..</td>
-                    <td>
-                        <a href="#">view</a>
-                        <a href="#">del</a>
-                        <a href="#">reply</a>
-                    </td>
-                    <td>Read</td>
-                </tr>
-                <tr>
-                    <th scope="row">16/08/2016</th>
-                    <td>Luthfi Ab..</td>
-                    <td>Halo aku mau nanya tentang..</td>
-                    <td>
-                        <a href="#">view</a>
-                        <a href="#">del</a>
-                        <a href="#">reply</a>
-                    </td>
-                    <td>Replied</td>
-                </tr>
-                <tr>
-                    <th scope="row">16/08/2016</th>
-                    <td>Luthfi Ab..</td>
-                    <td>Halo aku mau nanya tentang..</td>
-                    <td>
-                        <a href="#">view</a>
-                        <a href="#">del</a>
-                        <a href="#">reply</a>
-                    </td>
-                    <td>Replied</td>
-                </tr>
-                <tr>
-                    <th scope="row">16/08/2016</th>
-                    <td>Luthfi Ab..</td>
-                    <td>Halo aku mau nanya tentang..</td>
-                    <td>
-                        <a href="#">view</a>
-                        <a href="#">del</a>
-                        <a href="#">reply</a>
-                    </td>
-                    <td>Replied</td>
-                </tr>
-                <tr>
-                    <th scope="row">16/08/2016</th>
-                    <td>Luthfi Ab..</td>
-                    <td>Halo aku mau nanya tentang..</td>
-                    <td>
-                        <a href="#">view</a>
-                        <a href="#">del</a>
-                        <a href="#">reply</a>
-                    </td>
-                    <td>Replied</td>
-                </tr>
-                <tr>
-                    <th scope="row">16/08/2016</th>
-                    <td>Luthfi Ab..</td>
-                    <td>Halo aku mau nanya tentang..</td>
-                    <td>
-                        <a href="#">view</a>
-                        <a href="#">del</a>
-                        <a href="#">reply</a>
-                    </td>
-                    <td>Replied</td>
-                </tr>
+                @foreach($messages as $message)
+                    <tr>
+                        <th scope="row">{{ Carbon\Carbon::parse($message->created_at)->toDayDateTimeString() }}</th>
+                        <td>{{ $message->name_from }} | {{ $message->email_from }}</td>
+                        <td>{{ substr($message->message,0,30) }}...</td>
+                        <td>{{ $message->status }}</td>
+                        <td>
+                            <a href="{{ action('DashboardController@messageView',$message->id) }}">view</a>
+                            <a href="{{ action('DashboardController@messageDelete',$message->id) }}">del</a>
+                            <a href="{{ action('DashboardController@messageReply',$message->id) }}">reply</a>
+                        </td>
+                    </tr>
+                @endforeach
                 </tbody>
             </table>
         </div>

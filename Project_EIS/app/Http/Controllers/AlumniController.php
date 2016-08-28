@@ -46,4 +46,15 @@ class AlumniController extends Controller
         return redirect($this->redirectTo);/**/
     }
 
+    public function delete($id){
+        $alumni = Alumni::find($id);
+        if(is_null($alumni)){
+            abort(500);
+        }
+        $alumni->user->delete();
+        $alumni->delete();
+        Session::flash('user_deleted',true);
+        return redirect(action('DashboardController@membersManager'));
+    }
+
 }

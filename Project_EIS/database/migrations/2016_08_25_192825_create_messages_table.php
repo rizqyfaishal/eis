@@ -16,9 +16,8 @@ class CreateMessagesTable extends Migration
             $table->increments('id');
             $table->string('email_from');
             $table->string('name_from');
-            $table->string('phone_from');
             $table->text('message');
-            $table->boolean('isReply');
+            $table->tinyInteger('status');
             $table->softDeletes();
             $table->timestamps();
         });

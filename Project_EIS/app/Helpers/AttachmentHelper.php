@@ -21,18 +21,13 @@ trait AttachmentHelper
         return implode('/', str_split(substr($hashedFileName, 0, 30), 3)).'.'.$extension;
     }
 
-    public function saveFile($file,$category){
-        $cat = AttachmentCategory::where('id','=',$category)->first();
-        if(is_null($cat)){
-            abort(500);
-        }
+    public function saveFile($file){
         $new_attach = new Attachment();
         $new_attach->size = $file->getClientSize();
         $new_attach->extension = $file->getClientOriginalExtension();
         $new_attach->filename = $file->getClientOriginalName();
         $new_attach->uploaded_at = Carbon::now();
         $new_attach->mime_type = $file->getMimeType();
-        $cat->attachments()->save($new_attach);
         $id = $new_attach->id;
         $hashedFileName = md5($id);
         $new_attach->hashcode = $hashedFileName;
