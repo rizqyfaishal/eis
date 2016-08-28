@@ -17,6 +17,11 @@ Gray   Dark : #E7E1E1
 Gray   Light: #E5DFEC
 */
 
+#all-post-blog img{
+	display: block;
+	margin: 1em auto;
+}
+
 .event-container,
 .event-detail {
 	background-color: #ffffff;

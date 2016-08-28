@@ -60,7 +60,7 @@ class EventController extends Controller
         }
         $t = $event->update($request->all());
         if($request->hasFile('thumbnail')){
-            $this->updateFile($request->file('thumbnail'),$event->thumbnail());
+            $this->updateFile($event->thumbnail(),$request->file('thumbnail'));
         }
         if(!$t){
             abort(500);

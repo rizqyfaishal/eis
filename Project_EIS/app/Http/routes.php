@@ -54,15 +54,19 @@ Route::get('/dashboard/inbox/{id}/delete','DashboardController@messageDelete');
 
 Route::get('/dashboard/members', 'DashboardController@membersManager');
 Route::get('/dashboard/events/create', 'DashboardController@createEvent');
+Route::get('/dashboard/article/create', 'DashboardController@createArticle');
 Route::post('/dashboard/events/save', 'EventController@store');
+Route::post('/dashboard/article/save', 'ArticleController@store');
 Route::get('/dashboard/events/{id}/edit', 'EventController@edit');
+Route::get('/dashboard/article/{id}/edit', 'ArticleController@edit');
 Route::patch('/dashboard/events/{id}/edit', 'EventController@update');
+Route::patch('/dashboard/article/{id}/edit', 'ArticleController@update');
 Route::get('/dashboard/events/{id}/delete/confirm', 'DashboardController@eventDeleteConfirm');
+Route::get('/dashboard/article/{id}/delete/confirm', 'DashboardController@articleDeleteConfirm');
 Route::delete('/dashboard/events/{id}/delete', 'EventController@delete');
+Route::delete('/dashboard/article/{id}/delete', 'ArticleController@delete');
 
-Route::get('/dashboard/research', function () {
-    return view('dashboard-admin-randi-manager');
-});
+Route::get('/dashboard/research', 'DashboardController@articleManager');
 
 Route::get('/dashboard/event', 'DashboardController@eventManager');
 
@@ -110,6 +114,4 @@ Route::get('alumni/{id}/delete/confimation','DashboardController@deleteAlumniCon
 Route::get('f-student/{id}/delete/confimation','DashboardController@deleteFStudentConfirmation');
 Route::get('student/{id}/delete/confimation','DashboardController@deleteStudentConfirmation');
 
-Route::get('/post', function () {
-    return view('viewpost');
-});
+Route::get('/r-and-i/{id}','ArticleController@show');
