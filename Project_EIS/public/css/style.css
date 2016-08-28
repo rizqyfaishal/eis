@@ -148,6 +148,11 @@ body {
 	width: 80px;
 	border-radius: 10px;
 	background-color: white;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";       /* IE 8 */
+	filter: alpha(opacity=80);  /* IE 5-7 */
+	-moz-opacity: 0.8;          /* Netscape */
+	-khtml-opacity: 0.8;        /* Safari 1.x */
+	opacity: 0.8;               /* Good browsers */
 }
 
 .floating-widget ul {
@@ -160,11 +165,23 @@ body {
 	line-height: 60px;
 }
 
+.floating-widget li a:hover .icon-facebook {
+	color: darkblue;
+}
+
+.floating-widget li a:hover .icon-twitter {
+	color: dodgerblue;
+}
+
+.floating-widget li a:hover .icon-google {
+	color: red;
+}
+
 .icon-facebook {
 	position: absolute;
 	left: 20%;
 	top: 5%;
-	color: darkblue;
+	color: #9d9d9d;
 	border-radius: 10px;
 	background-color: white;
 }
@@ -173,7 +190,7 @@ body {
 	position: absolute;
 	left: 20%;
 	top: 35%;
-	color: dodgerblue;
+	color: #9d9d9d;
 	border-radius: 10px;
 	background-color: white;
 }
@@ -182,7 +199,7 @@ body {
 	position: absolute;
 	left: 20%;
 	top: 65%;
-	color: red;
+	color: #9d9d9d;
 	border-radius: 10px;
 	background-color: white;
 }
