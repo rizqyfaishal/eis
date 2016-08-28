@@ -105,3 +105,7 @@ Route::delete('student/{id}/delete','StudentController@delete');
 Route::get('alumni/{id}/delete/confimation','DashboardController@deleteAlumniConfirmation');
 Route::get('f-student/{id}/delete/confimation','DashboardController@deleteFStudentConfirmation');
 Route::get('student/{id}/delete/confimation','DashboardController@deleteStudentConfirmation');
+
+Route::get('/post', function () {
+    return view('viewpost');
+});
