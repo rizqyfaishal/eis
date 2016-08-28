@@ -12,6 +12,7 @@ class Event extends Model
 
     protected $dates = ['delete_at'];
     protected $fillable = ['title','event_date','event_location','body'];
+    protected $with = ['thumbnail'];
 
     public function thumbnail(){
         return $this->morphOne('App\Attachment','attach');

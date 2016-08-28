@@ -168,4 +168,8 @@ class DashboardController extends Controller
     public function createEvent(){
         return view('dashboard-admin-create-event');
     }
+
+    public function eventManager(){
+        return 
+    }
 }

@@ -94,6 +94,8 @@ Route::get('/email',function (){
 
 
 Route::post('send','MessageController@sendMessage');
+Route::get('events/{id}','EventController@show');
+Route::get('p/{hashcode}','AttachmentController@get');
 Route::post('reply','MessageController@reply');
 Route::post('message/{id}/delete','MessageController@delete');
 Route::patch('user/{id}/accept','DashboardController@toggleStatusAccepted');

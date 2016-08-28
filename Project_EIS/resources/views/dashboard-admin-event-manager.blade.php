@@ -16,7 +16,16 @@
         </a>
     </div>
     <div class="col-md-9">
-
+        <div class="well">
+            @if(\Illuminate\Support\Facades\Session::has('event_created'))
+                <div class="alert alert-success alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                    <strong>Sukses!!
+                        &nbsp;</strong>{{ \Illuminate\Support\Facades\Session::get('event_created') }}
+                </div>
+            @endif
+        </div>
         <div class="well">
             <h1>Events Manager</h1>
             <hr>
@@ -28,7 +37,6 @@
                         <th>Title</th>
                         <th>Location</th>
                         <th>Waktu</th>
-                        <th>Content</th>
                         <th>Action</th>
                     </tr>
                     </thead>
@@ -38,7 +46,6 @@
                         <td>NEW YORK ON CITY</td>
                         <td>NEW YORK ON CITY</td>
                         <td>NEW YORK ON CITY</td>
-                        <td>So, this is the city of am..</td>
                         <td>
                             <a href="#">view</a>
                             <a href="#">del</a>

@@ -12,7 +12,7 @@
         <div class="well">
             <h1>Create Event</h1>
             <hr>
-            {!! Form::model($event = new \App\Event(), ['method' => 'POST','action' => ['EventController@store']]) !!}
+            {!! Form::model($event = new \App\Event(), ['method' => 'POST','action' => ['EventController@store'],'enctype' => 'multipart/form-data']) !!}
             <div class="row">
                 <div class="col-lg-12">
                     <div class="form-group {{ $errors->has('title') ? 'has-error' : '' }}">
@@ -50,33 +50,48 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="form-group">
+                    <div class="form-group {{ $errors->has('event_location') ? 'has-error' : '' }}">
                         <div class="input-group">
                             <span class="input-group-addon">
                                 <i class="fa fa-map-marker">&nbsp;</i>Location
                             </span>
                             {!! Form::text('event_location',null,['class' => 'form-control','placeholder' => 'Event Location']) !!}
                         </div>
+                        @if($errors->has('event_location'))
+                            <span class="help-block">
+                                <strong>{{ $errors->first('event_location') }}</strong>
+                            </span>
+                        @endif
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="form-group">
+                    <div class="form-group {{ $errors->has('thumbnail') ? 'has-error' : '' }}">
                         <div class="input-group">
                             <span class="input-group-addon">
                                 <i class="fa fa-image">&nbsp;</i>Image Header
                             </span>
                             {!! Form::file('thumbnail',['class' => 'form-control','placeholder' => 'Image Header']) !!}
                         </div>
+                        @if($errors->has('thumbnail'))
+                            <span class="help-block">
+                                <strong>{{ $errors->first('thumbnail') }}</strong>
+                            </span>
+                        @endif
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="form-group">
-                        {!! Form::label('content') !!}
-                        {!! Form::textarea('content',null,['class' => 'tinymce']) !!}
+                    <div class="form-group {{ $errors->has('body') ? 'has-error' : '' }}">
+                        {!! Form::label('body') !!}
+                        {!! Form::textarea('body',null,['class' => 'tinymce']) !!}
+                        @if($errors->has('body'))
+                            <span class="help-block">
+                                <strong>{{ $errors->first('body') }}</strong>
+                            </span>
+                        @endif
                     </div>
                 </div>
             </div>

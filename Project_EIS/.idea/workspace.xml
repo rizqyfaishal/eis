@@ -21,20 +21,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="dashboard-admin-create-event.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/dashboard-admin-create-event.blade.php">
+      <file leaf-file-name="event-show.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/event-show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="44" column="69" selection-start-line="44" selection-start-column="69" selection-end-line="44" selection-end-column="69" />
+            <state relative-caret-position="285">
+              <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
               <folding>
-                <marker date="1472339500271" expanded="true" signature="3973:4131" ph="..." />
-                <marker date="1472339500271" expanded="true" signature="3986:4130" ph="..." />
-                <marker date="1472339500271" expanded="true" signature="4020:4119" ph="..." />
-                <marker date="1472339500271" expanded="true" signature="4034:4118" ph="..." />
-                <marker date="1472339500271" expanded="true" signature="4482:4876" ph="..." />
-                <marker date="1472339500271" expanded="true" signature="4495:4875" ph="..." />
-                <marker date="1472339500271" expanded="true" signature="4534:4864" ph="..." />
+                <element signature="e#1120#1126#1#HTML" expanded="true" />
+                <element signature="e#1307#1313#1#HTML" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dashboard-admin-event-manager.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/dashboard-admin-event-manager.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="44" column="49" selection-start-line="44" selection-start-column="49" selection-end-line="44" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DashboardController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DashboardController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="498">
+              <caret line="172" column="15" selection-start-line="172" selection-start-column="15" selection-end-line="172" selection-end-column="15" />
+              <folding>
+                <element signature="e#40#54#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -42,91 +69,62 @@
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
-              <caret line="56" column="11" selection-start-line="56" selection-start-column="11" selection-end-line="56" selection-end-column="11" />
+            <state relative-caret-position="141">
+              <caret line="87" column="16" selection-start-line="87" selection-start-column="16" selection-end-line="87" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="117e04c2488eea0adcb51a178660fcaf0173efe8.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/storage/framework/views/117e04c2488eea0adcb51a178660fcaf0173efe8.php">
+      <file leaf-file-name="RouteNotFoundException.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/symfony/routing/Exception/RouteNotFoundException.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
-              <caret line="54" column="30" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
+            <state relative-caret-position="187">
+              <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AttachmentHelper.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Helpers/AttachmentHelper.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AttachmentController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AttachmentController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-34">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2016_08_28_150301_update_asks_table.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2016_08_28_150301_update_asks_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Ask.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Ask.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding>
-                <marker date="1472339504477" expanded="true" signature="3706:3729" ph="..." />
+                <element signature="e#23#62#0#PHP" expanded="true" />
               </folding>
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/app.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2567">
-              <caret line="151" column="57" selection-start-line="151" selection-start-column="57" selection-end-line="151" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="filesystems.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/filesystems.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="elfinder.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/elfinder.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EventController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EventController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
-              <folding>
-                <element signature="e#40#72#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EventRequest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Requests/EventRequest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="facebook.gif" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/vendor/beautymail/assets/images/widgets/facebook.gif">
-          <provider selected="true" editor-type-id="images">
-            <state />
           </provider>
         </entry>
       </file>
@@ -142,11 +140,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Http/Requests/EditAkunRequest.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" />
-        <option value="$PROJECT_DIR$/app/Admin.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2016_08_25_192825_create_messages_table.php" />
-        <option value="$PROJECT_DIR$/app/Http/Requests/MessageRequest.php" />
         <option value="$PROJECT_DIR$/app/Message.php" />
         <option value="$PROJECT_DIR$/resources/dashboard-admin-reply-message.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/dashboard-admin-message-view.blade.php" />
@@ -157,7 +150,6 @@
         <option value="$PROJECT_DIR$/resources/views/dashboard-admin-message-delete.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/RedirectIfNotAdmin.php" />
-        <option value="$PROJECT_DIR$/public/css/style.css" />
         <option value="$PROJECT_DIR$/resources/views/dashboard-admin-delete-user-confirm.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/dashboard-admin-delete-alumni-confirm.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/dashboard-admin-member-manager.blade.php" />
@@ -174,25 +166,31 @@
         <option value="$PROJECT_DIR$/resources/views/contact-us.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/PageController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2016_08_27_211040_create_attachments_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2016_08_27_211014_create_questions_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2016_08_27_210852_create_articles_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2016_08_27_210845_create_article_categories_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2016_08_27_212336_create_answers_table.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/AttachmentController.php" />
         <option value="$PROJECT_DIR$/app/Helpers/AttachmentHelper.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" />
-        <option value="$PROJECT_DIR$/resources/views/dashboard-admin-event-manager.blade.php" />
         <option value="$PROJECT_DIR$/app/Attachment.php" />
         <option value="$PROJECT_DIR$/database/migrations/2016_08_25_194052_create_events_table.php" />
-        <option value="$PROJECT_DIR$/app/Event.php" />
         <option value="$PROJECT_DIR$/resources/views/layout/dashboard-master.blade.php" />
         <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/config/elfinder.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/EventController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Requests/EventRequest.php" />
         <option value="$PROJECT_DIR$/storage/framework/views/117e04c2488eea0adcb51a178660fcaf0173efe8.php" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2016_08_27_211014_create_questions_table.php" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/EventRequest.php" />
         <option value="$PROJECT_DIR$/resources/views/dashboard-admin-create-event.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/EventController.php" />
+        <option value="$PROJECT_DIR$/app/Event.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2016_08_28_135716_create_ask_categories_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2016_08_28_150301_update_asks_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2016_08_28_135158_create_asks_table.php" />
+        <option value="$PROJECT_DIR$/app/Ask.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/public/css/style.css" />
+        <option value="$PROJECT_DIR$/resources/views/event-show.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/dashboard-admin-event-manager.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" />
       </list>
     </option>
   </component>
@@ -274,43 +272,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="storage" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project_EIS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project_EIS" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="storage" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="framework" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project_EIS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project_EIS" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="storage" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="framework" />
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -406,7 +368,29 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="seeds" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project_EIS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project_EIS" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrations" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -434,7 +418,7 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="SearchEverywhereHistoryKey" value="routes&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/routes.php&#10;creat&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/dashboard-admin-create-event.blade.php&#10;Event&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Requests/EventRequest.php&#10;crea&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/dashboard-admin-create-event.blade.php&#10;EventCon&#9;null&#9;null&#10;app&#9;FILE&#9;file://D:/projects/eis/Project_EIS/config/app.php&#10;event&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/dashboard-admin-create-event.blade.php&#10;route&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/routes.php&#10;Eve&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Event.php&#10;ro&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/routes.php&#10;Dash&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/DashboardController.php&#10;Pa&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/PageController.php&#10;contac&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/contact-us.blade.php&#10;Page&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/PageController.php&#10;rou&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/routes.php&#10;MEss&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/MessageController.php&#10;Con&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/PageController.php&#10;ALum&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/AlumniController.php&#10;Fu&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/FutureStudentController.php&#10;St&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/StudentController.php&#10;Das&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/DashboardController.php&#10;mem&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/dashboard-admin-member-manager.blade.php&#10;me&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/dashboard-admin-member-manager.blade.php&#10;ma&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/dashboard-admin-member-manager.blade.php&#10;Da&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/DashboardController.php&#10;dele&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/dashboard-admin-delete-alumni-confirm.blade.php&#10;routee&#9;null&#9;null&#10;membe&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/dashboard-admin-member-manager.blade.php&#10;Alu&#9;null&#9;null&#10;Alum&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/AlumniController.php&#10;sty&#9;FILE&#9;file://D:/projects/eis/Project_EIS/public/css/style.css&#10;Dashb&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/DashboardController.php&#10;r&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/routes.php&#10;Alumn&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/AlumniController.php&#10;mana&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/dashboard-admin-member-manager.blade.php&#10;Redirect&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Middleware/RedirectIfNotAdmin.php&#10;Red&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Middleware/RedirectIfAuthenticated.php&#10;create_us&#9;FILE&#9;file://D:/projects/eis/Project_EIS/database/migrations/2014_10_12_000000_create_users_table.php&#10;Messa&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/MessageController.php&#10;delete&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/dashboard-admin-message-delete.blade.php&#10;Mes&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/MessageController.php&#10;INbox&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/dashboard-admin-inbox.blade.php&#10;Mess&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/MessageController.php&#10;MEs&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/MessageController.php&#10;MEssage&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/MessageController.php&#10;inbox&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/dashboard-admin-inbox.blade.php&#10;gant&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/dashboard-admin-ganti-password.blade.php&#10;conta&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/contact-us.blade.php&#10;Message&#9;null&#9;null&#10;app.p&#9;FILE&#9;file://D:/projects/eis/Project_EIS/config/app.php" />
+    <property name="SearchEverywhereHistoryKey" value="DashboardCon&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/DashboardController.php&#10;event-mana&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/dashboard-admin-event-manager.blade.php&#10;sty&#9;FILE&#9;file://D:/projects/eis/Project_EIS/public/css/style.css&#10;eve&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/event-show.blade.php&#10;style&#9;FILE&#9;file://D:/projects/eis/Project_EIS/public/css/style.css&#10;route&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/routes.php&#10;Attac&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/AttachmentController.php&#10;Atta&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Helpers/AttachmentHelper.php&#10;roue&#9;null&#9;null&#10;Ask&#9;null&#9;null&#10;Eve&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Event.php&#10;create&#9;FILE&#9;file://D:/projects/eis/Project_EIS/database/migrations/2016_08_25_194052_create_events_table.php&#10;event&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/event-show.blade.php&#10;rou&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/routes.php&#10;routes&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/routes.php&#10;Event&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/EventController.php&#10;Even&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/EventController.php&#10;even&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/dashboard-admin-event-manager.blade.php&#10;crea&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/dashboard-admin-create-event.blade.php&#10;Ve&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Requests/EventRequest.php&#10;creat&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/dashboard-admin-create-event.blade.php&#10;EventCon&#9;null&#9;null&#10;app&#9;FILE&#9;file://D:/projects/eis/Project_EIS/config/app.php&#10;ro&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/routes.php&#10;Dash&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/DashboardController.php&#10;Pa&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/PageController.php&#10;contac&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/contact-us.blade.php&#10;Page&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/PageController.php&#10;MEss&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/MessageController.php&#10;Con&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/PageController.php&#10;ALum&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/AlumniController.php&#10;Fu&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/FutureStudentController.php&#10;St&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/StudentController.php&#10;Das&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/DashboardController.php&#10;mem&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/dashboard-admin-member-manager.blade.php&#10;me&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/dashboard-admin-member-manager.blade.php&#10;ma&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/dashboard-admin-member-manager.blade.php&#10;Da&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/DashboardController.php&#10;dele&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/dashboard-admin-delete-alumni-confirm.blade.php&#10;routee&#9;null&#9;null&#10;membe&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/dashboard-admin-member-manager.blade.php&#10;Alu&#9;null&#9;null&#10;Alum&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/AlumniController.php&#10;Dashb&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/DashboardController.php&#10;r&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/routes.php&#10;Alumn&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/AlumniController.php&#10;mana&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/dashboard-admin-member-manager.blade.php&#10;Redirect&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Middleware/RedirectIfNotAdmin.php&#10;Red&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Middleware/RedirectIfAuthenticated.php&#10;create_us&#9;FILE&#9;file://D:/projects/eis/Project_EIS/database/migrations/2014_10_12_000000_create_users_table.php" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -519,12 +503,12 @@
       <workItem from="1472139979015" duration="1226000" />
       <workItem from="1472149181273" duration="5482000" />
       <workItem from="1472204836559" duration="64918000" />
-      <workItem from="1472379417273" duration="437000" />
+      <workItem from="1472379417273" duration="7781000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95237000" />
+    <option name="totallyTimeSpent" value="102581000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -537,7 +521,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2322239" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -547,7 +531,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35679215" sideWeight="0.4969743" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35679215" sideWeight="0.4969743" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -559,6 +543,27 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35679215" sideWeight="0.4969743" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2322239" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -583,70 +588,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/dashboard-admin-message-delete.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="289" column="26" selection-start-line="289" selection-start-column="26" selection-end-line="289" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/dashboard-admin-edit-akun.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="26" column="74" selection-start-line="0" selection-start-column="0" selection-end-line="206" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/dashboard-admin-delete-user-confirm.blade.php" />
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/routing/Exception/RouteNotFoundException.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/dashboard-admin-delete-alumni-confirm.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="122" column="63" selection-start-line="0" selection-start-column="0" selection-end-line="142" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/dashboard-admin-member-manager.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="160" column="58" selection-start-line="160" selection-start-column="58" selection-end-line="160" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/dashboard-admin-delete-student-confirm.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="78" selection-start-line="15" selection-start-column="78" selection-end-line="15" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/dashboard-admin-delete-f-student-confirm.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="55" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/StudentController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -717,20 +658,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AttachmentController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-21">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Helpers/AttachmentHelper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/dashboard-admin-ganti-password.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="331">
@@ -745,24 +672,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DashboardController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="168" column="35" selection-start-line="168" selection-start-column="35" selection-end-line="168" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/dashboard-admin-event-manager.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="59" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Attachment.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="e#23#62#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -777,13 +693,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2016_08_27_211014_create_questions_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -815,20 +724,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2016_08_25_194052_create_events_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Event.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/bootstrap-datetimepicker.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -840,6 +735,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -902,54 +798,201 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EventController.php">
+    <entry file="file://$PROJECT_DIR$/storage/framework/views/117e04c2488eea0adcb51a178660fcaf0173efe8.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+        <state relative-caret-position="1088">
+          <caret line="71" column="30" selection-start-line="71" selection-start-column="30" selection-end-line="71" selection-end-column="30" />
           <folding>
-            <element signature="e#40#72#0#PHP" expanded="true" />
+            <marker date="1472396307951" expanded="true" signature="1067:1282" ph="..." />
+            <marker date="1472396307951" expanded="true" signature="1996:2216" ph="..." />
+            <marker date="1472396307951" expanded="true" signature="4791:4814" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_08_27_211014_create_questions_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="25" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Requests/EventRequest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/framework/views/117e04c2488eea0adcb51a178660fcaf0173efe8.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="54" column="30" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
-          <folding>
-            <marker date="1472339504477" expanded="true" signature="3706:3729" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="56" column="11" selection-start-line="56" selection-start-column="11" selection-end-line="56" selection-end-column="11" />
+        <state relative-caret-position="169">
+          <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/dashboard-admin-create-event.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="44" column="69" selection-start-line="44" selection-start-column="69" selection-end-line="44" selection-end-column="69" />
+        <state relative-caret-position="68">
+          <caret line="88" column="48" selection-start-line="88" selection-start-column="48" selection-end-line="88" selection-end-column="48" />
           <folding>
-            <marker date="1472339500271" expanded="true" signature="3973:4131" ph="..." />
-            <marker date="1472339500271" expanded="true" signature="3986:4130" ph="..." />
-            <marker date="1472339500271" expanded="true" signature="4020:4119" ph="..." />
-            <marker date="1472339500271" expanded="true" signature="4034:4118" ph="..." />
-            <marker date="1472339500271" expanded="true" signature="4482:4876" ph="..." />
-            <marker date="1472339500271" expanded="true" signature="4495:4875" ph="..." />
-            <marker date="1472339500271" expanded="true" signature="4534:4864" ph="..." />
+            <marker date="1472396305183" expanded="true" signature="4932:5090" ph="..." />
+            <marker date="1472396305183" expanded="true" signature="4945:5089" ph="..." />
+            <marker date="1472396305183" expanded="true" signature="4979:5078" ph="..." />
+            <marker date="1472396305183" expanded="true" signature="4993:5077" ph="..." />
+            <marker date="1472396305183" expanded="true" signature="5441:5835" ph="..." />
+            <marker date="1472396305183" expanded="true" signature="5454:5834" ph="..." />
+            <marker date="1472396305183" expanded="true" signature="5493:5823" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/dashboard-admin-edit-akun.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="27" column="22" selection-start-line="22" selection-start-column="16" selection-end-line="27" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EventController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+          <folding>
+            <element signature="e#40#54#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/ask-our-alumni.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="11" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layout/master.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-459">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_08_25_194052_create_events_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Event.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+          <folding>
+            <element signature="e#23#41#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_08_28_135716_create_ask_categories_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_08_28_135158_create_asks_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_08_28_150301_update_asks_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Ask.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="e#23#62#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/routing/Exception/RouteNotFoundException.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Helpers/AttachmentHelper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AttachmentController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="87" column="16" selection-start-line="87" selection-start-column="16" selection-end-line="87" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/event-show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+          <folding>
+            <element signature="e#1120#1126#1#HTML" expanded="true" />
+            <element signature="e#1307#1313#1#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/dashboard-admin-event-manager.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="44" column="49" selection-start-line="44" selection-start-column="49" selection-end-line="44" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DashboardController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="172" column="15" selection-start-line="172" selection-start-column="15" selection-end-line="172" selection-end-column="15" />
+          <folding>
+            <element signature="e#40#54#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

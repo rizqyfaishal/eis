@@ -25,7 +25,7 @@ class EventRequest extends Request
     {
         return [
             'title' => 'required|max:255',
-            'event_loation' => 'required|max:255',
+            'event_location' => 'required|max:255',
             'event_date' => 'required|date',
             'thumbnail' => 'required|max:2048|mimes:jpg,jpeg,png',
             'body' => 'required'
