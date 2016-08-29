@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Admin;
 use App\Alumni;
+use App\Article;
+use App\Event;
 use App\FutureStudent;
 use App\Message;
 use App\Student;
@@ -167,5 +169,44 @@ class DashboardController extends Controller
 
     public function createEvent(){
         return view('dashboard-admin-create-event');
+    }
+
+    public function createArticle(Request $request){
+        $type = $request->query('type');
+        return view('dashboard-admin-article-create')->with([
+            'type_id' => $type
+        ]);
+    }
+
+    public function eventManager(){
+        return view('dashboard-admin-event-manager')->with([
+            'events' => Event::all()
+        ]);
+    }
+
+    public function articleManager(){
+        return view('dashboard-admin-randi-manager')->with([
+            'articles' => Article::all()
+        ]);
+    }
+
+    public function eventDeleteConfirm($id){
+        $event = Event::find($id);
+        if(is_null($event)){
+            abort(404);
+        }
+        return view('dashboard-admin-delete-event-confirm')->with([
+            'event' => $event
+        ]);
+    }
+
+    public function articleDeleteConfirm($id){
+        $article = Article::find($id);
+        if(is_null($article)){
+            abort(404);
+        }
+        return view('dashboard-admin-article-delete-confirm')->with([
+            'article' => $article
+        ]);
     }
 }

@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use App\Http\Requests\Request;
 
-class EventRequest extends Request
+class EventUpdateRequest extends Request
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -27,7 +27,6 @@ class EventRequest extends Request
             'title' => 'required|max:255',
             'event_location' => 'required|max:255',
             'event_date' => 'required|date',
-            'thumbnail' => 'required|max:2048|mimes:jpg,jpeg,png',
             'body' => 'required'
         ];
     }

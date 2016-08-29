@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use App\Http\Requests\Request;
 
-class EventRequest extends Request
+class ArticleEditRequest extends Request
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -25,9 +25,8 @@ class EventRequest extends Request
     {
         return [
             'title' => 'required|max:255',
-            'event_location' => 'required|max:255',
-            'event_date' => 'required|date',
-            'thumbnail' => 'required|max:2048|mimes:jpg,jpeg,png',
+            'snippet' => 'required|max:450',
+            'thumbnail' => 'max:2048|mimes:jpg,jpeg,png',
             'body' => 'required'
         ];
     }

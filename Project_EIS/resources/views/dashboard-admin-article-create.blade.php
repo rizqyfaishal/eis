@@ -10,10 +10,11 @@
 
     <div class="col-md-9">
         <div class="well">
-            <h1>Create Event</h1>
+            <h1>Create Artikel</h1>
             <hr>
-            {!! Form::model($event = new \App\Event(), ['method' => 'POST','action' => ['EventController@store'],'enctype' => 'multipart/form-data']) !!}
-                @include('partials._event-form')
+            {!! Form::model($article = new \App\Article(), ['method' => 'POST','action' => ['ArticleController@store'],'enctype' => 'multipart/form-data']) !!}
+            {!! Form::hidden('article_category_id',$type_id) !!}
+            @include('partials._article-form')
             {!! Form::close() !!}
         </div>
     </div>
@@ -77,7 +78,7 @@
                 '//www.tinymce.com/css/codepen.min.css'
             ],
             file_browser_callback : elFinderBrowser,
-            relative_urls: true,
+//            relative_urls: true,
         });
 
         function elFinderBrowser (field_name, url, type, win) {
