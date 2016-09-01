@@ -46,11 +46,19 @@
     {{--</div>--}}
 </footer>
     <script src="{{ URL::asset('js/jquery-2.2.0.min.js') }}" type="text/javascript"></script>
-    <script src="{{ URL::asset('js/slick.js') }}" type="text/javascript" charset="utf-8"></script>
     <script src="{{ URL::asset('js/bootstrap.min.js') }}"></script>
+
+    <script src="{{ URL::asset('js/slick.js') }}" type="text/javascript" charset="utf-8"></script>
     <script src="{{ URL::asset('js/datatables.min.js') }}" type="text/javascript"></script>
+<script>
+    $(document).ready(function () {
+        $('.dropdown-toggle').dropdown();
+    });
+</script>
     @yield('date-time-picker')
     @yield('scripts')
     @yield('tiny-mce')
+@yield('select2')
+
 </body>
 </html>

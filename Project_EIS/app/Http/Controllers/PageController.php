@@ -3,7 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Admin;
+use App\Article;
+use App\Ask;
+use App\Event;
 use App\Helper\RegistersUsers;
+use App\Program;
 use App\User;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
@@ -15,11 +19,33 @@ use Illuminate\Support\Facades\Session;
 class PageController extends Controller
 {
 
+
     use RegistersUsers;
 
     public function index(){
-        return view('home');
+        return view('home')->with([
+            'events' => Event::all(),
+            'articles' => Article::all()
+        ]);
     }
+
+    public function programs(){
+        return view('our-program')->with([
+            'programs' => Program::all()
+        ]);
+    }
+
+    public function getAskJSON($id){
+        $ask = Ask::find($id);
+        if(is_null($ask)){
+            abort(404);
+        }
+        return response()->json([
+            'status' => true,
+            'data' => $ask
+        ]);
+    }
+
 
     public function checkUnique($email){
         $email = User::where('email','=',$email)->first();
@@ -68,6 +94,22 @@ class PageController extends Controller
         return view('contact-us')->with([
             'authAvailable' => $authAvailable
         ]);
+    }
+
+    public function akunSuspended(){
+        if(!Session::has('suspended')){
+            abort(404);
+        }
+        Auth::guard($this->getGuard())->logout();
+        return view('register-suspend');
+    }
+
+    public function akunRejected(){
+        if(!Session::has('rejected')){
+            abort(400);
+        }
+        Auth::guard($this->getGuard())->logout();
+        return view('register-rejected');
     }
 
 

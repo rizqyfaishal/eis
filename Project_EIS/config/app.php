@@ -206,6 +206,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'HTML' => Collective\Html\HtmlFacade::class,
         'Form' => Collective\Html\FormFacade::class,
+        'BeautyEmail' => Snowfire\Beautymail\BeautymailFacade::class,
 
     ],
 

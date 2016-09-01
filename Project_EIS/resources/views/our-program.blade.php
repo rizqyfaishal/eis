@@ -10,14 +10,6 @@
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/slick.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/slick-theme.css') }}">
     <style type="text/css">
-        /*   html, body {
-             margin: 0;
-             padding: 0;
-           }
-
-           * {
-             box-sizing: border-box;
-           }*/
 
         .slider-slick {
             width: 90%;
@@ -49,209 +41,44 @@
 
             <div class="row">
                 <div class="container">
-                    <!-- <div class="col-sm-2"></div> -->
                     <div class="col-lg-12">
                         <div class="responsive-slick slider-slick">
-                            <div>
-                                <!-- <div class="col-sm-4"> -->
+                            @foreach($programs as $program)
                                 <div class="text-center program-block">
-                                    <h2>A NIGHT TO REMEMBER</h2>
+                                    <h2>{{ $program->title }}</h2>
                                     <div class="program-img-ins">
-                                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                        <div id="myCarousel_{{ $program->id }}" class="carousel slide" data-ride="carousel">
                                             <!-- Indicators -->
                                             <ol class="carousel-indicators">
-                                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                                                <li data-target="#myCarousel" data-slide-to="1"></li>
-                                                <li data-target="#myCarousel" data-slide-to="2"></li>
-                                                <li data-target="#myCarousel" data-slide-to="3"></li>
+                                                @foreach($program->thumbnails as $index => $thumbnail)
+                                                    <li data-target="#myCarousel_{{ $program->id }}" data-slide-to="{{ $index }}" class="{{ $index == 0 ? 'active' : '' }}"></li>
+                                                @endforeach
                                             </ol>
 
-                                            <!-- Wrapper for slides -->
                                             <div class="carousel-inner" role="listbox">
-                                                <div class="item active">
-                                                    <img src="http://placehold.it/50x50" style="width:100%;">
-                                                </div>
-
-                                                <div class="item">
-                                                    <img src="http://placehold.it/150x150" style="width:100%;">
-                                                </div>
-
-                                                <div class="item">
-                                                    <img src="http://placehold.it/350x350" style="width:100%;">
-                                                </div>
-
-                                                <div class="item">
-                                                    <img src="http://placehold.it/250x250" style="width:100%;">
-                                                </div>
+                                                @foreach($program->thumbnails as $index => $thumbnail)
+                                                    <div class="item {{ $index == 0 ? 'active' : '' }}">
+                                                        <img src="{{ action('AttachmentController@get',$thumbnail->hashcode) }}" style="width:100%;">
+                                                    </div>
+                                                @endforeach
                                             </div>
 
-                                            <!-- Left and right controls -->
-                                            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                                                <!-- <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> -->
-                                                <!-- <span class="sr-only">Previous</span> -->
+                                            <a class="left carousel-control" href="#myCarousel_{{ $program->id }}" role="button" data-slide="prev">
                                             </a>
-                                            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                                                <!-- <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                                                <span class="sr-only">Next</span> -->
+                                            <a class="right carousel-control" href="#myCarousel_{{ $program->id }}" role="button" data-slide="next">
                                             </a>
                                         </div>
-                                        <!-- <img src="http://placehold.it/250x250" style="width:100%;"> -->
                                     </div>
                                     <div class="program-img-ins">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget venenatis leo. Pellentesque luctus justo ultrices..</p>
-                                        <a href="#"><i>read more>></i></a>
+                                        <p>
+                                            {{ $program->snippet }}
+                                        </p>
+                                        <a href="{{ action('ProgramController@show',$program->id) }}"><i>read more>></i></a>
                                     </div>
                                 </div>
-                                <!-- </div> -->
-                                <!-- <img src="http://placehold.it/350x300?text=99"> -->
-                            </div>
-                            <div>
-                                <div class="text-center program-block">
-                                    <h2>EDUNATION</h2>
-                                    <div class="program-img-ins">
-                                        <img src="http://placehold.it/250x250" style="width:100%;">
-                                    </div>
-                                    <div class="program-img-ins">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget venenatis leo. Pellentesque luctus justo ultrices..</p>
-                                        <a href="#"><i>read more>></i></a>
-                                    </div>
-                                </div>
-                                <!-- <img src="http://placehold.it/350x300?text=2"> -->
-                            </div>
-                            <div>
-                                <div class="text-center program-block">
-                                    <h2>CREATIVE INDUSTRY</h2>
-                                    <div class="program-img-ins">
-                                        <img src="http://placehold.it/250x250" style="width:100%;">
-                                    </div>
-                                    <div class="program-img-ins">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget venenatis leo. Pellentesque luctus justo ultrices..</p>
-                                        <a href="#"><i>read more>></i></a>
-                                    </div>
-                                </div>
-                                <!-- <img src="http://placehold.it/350x300?text=3"> -->
-                            </div>
-                            <div>
-                                <div class="text-center program-block">
-                                    <h2>CREATIVE BUSINESS</h2>
-                                    <div class="program-img-ins">
-                                        <img src="http://placehold.it/250x250" style="width:100%;">
-                                    </div>
-                                    <div class="program-img-ins">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget venenatis leo. Pellentesque luctus justo ultrices..</p>
-                                        <a href="#"><i>read more>></i></a>
-                                    </div>
-                                </div>
-                                <!-- <img src="http://placehold.it/350x300?text=4"> -->
-                            </div>
-                            <div>
-                                <div class="text-center program-block">
-                                    <h2>CREATIVE OF EVERYTHING</h2>
-                                    <div class="program-img-ins">
-                                        <img src="http://placehold.it/250x250" style="width:100%;">
-                                    </div>
-                                    <div class="program-img-ins">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget venenatis leo. Pellentesque luctus justo ultrices..</p>
-                                        <a href="#"><i>read more>></i></a>
-                                    </div>
-                                </div>
-                                <!-- <img src="http://placehold.it/350x300?text=5"> -->
-                            </div>
-                            <div>
-                                <div class="text-center program-block">
-                                    <h2>CREATIVE FOR TEXTING</h2>
-                                    <div class="program-img-ins">
-                                        <img src="http://placehold.it/250x250" style="width:100%;">
-                                    </div>
-                                    <div class="program-img-ins">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget venenatis leo. Pellentesque luctus justo ultrices..</p>
-                                        <a href="#"><i>read more>></i></a>
-                                    </div>
-                                </div>
-                                <!-- <img src="http://placehold.it/350x300?text=6"> -->
-                            </div>
-                            <div>
-                                <div class="text-center program-block">
-                                    <h2>CREATIVE ENGLISH</h2>
-                                    <div class="program-img-ins">
-                                        <img src="http://placehold.it/250x250" style="width:100%;">
-                                    </div>
-                                    <div class="program-img-ins">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget venenatis leo. Pellentesque luctus justo ultrices..</p>
-                                        <a href="#"><i>read more>></i></a>
-                                    </div>
-                                </div>
-                                <!-- <img src="http://placehold.it/350x300?text=7"> -->
-                            </div>
-                            <div>
-                                <div class="text-center program-block">
-                                    <h2>CREATIVE FOR YOU</h2>
-                                    <div class="program-img-ins">
-                                        <img src="http://placehold.it/250x250" style="width:100%;">
-                                    </div>
-                                    <div class="program-img-ins">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget venenatis leo. Pellentesque luctus justo ultrices..</p>
-                                        <a href="#"><i>read more>></i></a>
-                                    </div>
-                                </div>
-                                <!-- <img src="http://placehold.it/350x300?text=8"> -->
-                            </div>
-                            <div>
-                                <div class="text-center program-block">
-                                    <h2>CREATIVITY OF YOU</h2>
-                                    <div class="program-img-ins">
-                                        <img src="http://placehold.it/250x250" style="width:100%;">
-                                    </div>
-                                    <div class="program-img-ins">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget venenatis leo. Pellentesque luctus justo ultrices..</p>
-                                        <a href="#"><i>read more>></i></a>
-                                    </div>
-                                </div>
-                                <!-- <img src="http://placehold.it/350x300?text=9"> -->
-                            </div>
+                            @endforeach
                         </div>
                     </div>
-
-
-                    <!-- <div class="col-lg-offset-1 col-lg-10">
-                        <div class="col-sm-4">
-                            <div class="text-center program-block">
-                                <h2>A NIGHT TO REMEMBER</h2>
-                                <div class="program-img-ins">
-                                <img src="http://placehold.it/250x250" style="width:100%;">
-                                </div>
-                                <div class="program-img-ins">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget venenatis leo. Pellentesque luctus justo ultrices..</p>
-                                <a href="#"><i>read more>></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 program-block-middle">
-                            <div class="text-center program-block">
-                                <h2>EDUNATION</h2>
-                                <div class="program-img-ins">
-                                <img src="http://placehold.it/250x250" style="width:100%;">
-                                </div>
-                                <div class="program-img-ins">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget venenatis leo. Pellentesque luctus justo ultrices..</p>
-                                <a href="#"><i>read more>></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="text-center program-block">
-                                <h2>CREATIVE INDUSTRY</h2>
-                                <div class="program-img-ins">
-                                <img src="http://placehold.it/250x250" style="width:100%;">
-                                </div>
-                                <div class="program-img-ins">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget venenatis leo. Pellentesque luctus justo ultrices..</p>
-                                <a href="#"><i>read more>></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>   -->
-
                 </div>
             </div>
         </div>

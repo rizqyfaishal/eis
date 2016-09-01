@@ -1,0 +1,29 @@
+<div class="row">
+
+    <div ng-class="{'col-lg-<% 12 - level %>': true, 'col-lg-offset-<% level %>': true }">
+        <div class="ask-comment-list">
+            <div class="avatar">
+                <img src="http://localhost:8000/img/user.png" alt="Avatar">
+            </div>
+            <div class="ask-comment-content">
+                <div class="ask-comment-details">
+                    <h5 ng-bind="ask.author.fname + ' ' + ask.author.lname"></h5>
+                    <small class="ask-date" ng-bind="ask.created_at"></small>
+                    <br>
+                    <small>Replied To </small><strong ng-bind="parent.author.fname + ' ' + parent.author.lname"></strong>
+                    <hr>
+                    <div ng-bind-html="ask.ask_content" class="ask-content-html"></div>
+                </div>
+                <div class="ask-content-comment-control" style="margin: 1em 0;">
+                    <comment-form id="<% ask.id %>" ask="ask"></comment-form>
+                </div>
+                <div class="new-comment-temp" ng-init="ask.temp = []">
+                    <comment-list ng-repeat="temp in ask.temp" parent="ask" ask="temp" level="level + 1"></comment-list>
+                </div>
+                <div ng-repeat="reply in ask.reply">
+                    <comment-list parent="ask" ask="reply" level="level + 1"></comment-list>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

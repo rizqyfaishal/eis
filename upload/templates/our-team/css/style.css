@@ -1,0 +1,211 @@
+@font-face {
+	font-family: 'Avenir Book';
+	src: url('../fonts/AvenirLTStd-Book.otf');
+}
+
+/*
+Color List
+Brown  Dark : #C9AE8A
+Brown  Light: #F0E2BC
+Cyan   Dark : #CCE6D2
+Cyan   Light: #E3F2DC
+Blue   Dark : #AABCD2
+Blue   Light: #D3F0F4
+Purple Dark : #DCC5C1
+Purple Light: #FBEAE9
+Gray   Dark : #E7E1E1
+Gray   Light: #E5DFEC
+*/
+
+body {
+	background-image: url("../img/bg.png");
+	background-size: cover;
+	width: 100%;
+}
+
+.hexa-up {
+	position: fixed;
+	left: 68%;
+}
+
+.hexa-down {
+	position: fixed;
+	top: 85%;
+	left: 70%;
+}
+
+.eis-mark {
+	position: fixed;
+	left: 2%;
+	top: 90%;
+}
+
+.header-logo {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+.header-logo img {
+	padding-top: 2%;
+}
+
+.nav-bar {
+	background-color: #9d9d9d;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	margin-top: 2%;
+}
+
+.header-ul {
+	margin: 0 auto;
+	display: table;
+}
+
+.header-ul li {
+	list-style: none;
+	float: left;
+	padding: 0px 8px 0px 8px;
+	font-family: "Avenir Book";
+	font-size: 18px;
+	border-right: 2px solid white;
+}
+
+.header-ul li:last-child {
+	border: none;
+}
+
+.post-title {
+	font-family: "Avenir Book";
+	text-align: center;
+	font-size: 36px;
+	margin-top: 5%;
+	padding-bottom: 20px;
+}
+
+.whole-content {
+	margin-top: 2%;
+}
+
+.content-update {
+	border-right: 3px solid gray;
+}
+
+.content-ri {
+	border-right: 3px solid gray;
+}
+
+.content-upcoming {
+}
+
+.article p {
+	font-family: "Avenir Book";
+	font-size: 18px;
+	padding: 10px 50px 10px 50px;
+	text-align: justify;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover, a:active, a:link {
+	text-decoration: none;
+	color: white;
+}
+
+/*a:visited {
+	text-decoration: none;
+	color: white;
+}*/
+
+
+
+/*OUR TEAM START HERE*/
+
+.img-team-member {
+	border-radius: 50%;
+	max-width: 200px;			
+}
+
+.h-team-member {
+	
+	font-size: 18px;
+	padding: 10px 50px 10px 50px;
+	text-align: justify;
+	font-weight: 900;
+}
+
+.p-team-member {
+
+}
+
+.whoweare {
+	font-family: "Avenir Book";
+	font-size: 80px;
+	font-weight: 20;
+}
+
+.post-title-team-member {
+	font-family: "Avenir Book";
+	text-align: center;
+	font-size: 36px;
+	margin-top: 3%;
+	/*padding-bottom: 20px;*/
+}
+
+.the-line {
+	border-right: 3px solid gray;
+}
+
+.dummy {
+	visibility: hidden;
+}
+
+.finance {
+	margin-top: 120px;
+}
+
+.secretary {
+	margin-top: 40px;
+}
+
+.internal-artsport {
+	margin-top: 30px;
+}
+/*
+.internal-marketing {
+	margin-top: 100px;
+}
+
+.internal-project {
+	margin-top: 100px;
+}
+*/
+.jarak-atas{
+	margin-top: 100px;
+}
+
+.pembatas-hp {
+	display: block;
+    height: 0px;
+    border: 0;
+    border-top: 0px solid black;
+    margin: 0 0;
+    padding: 0;
+    visibility: hidden;
+}
+
+@media screen and (max-width: 480px) and (min-width: 100px) {    
+    .pembatas-hp {
+		display: block;
+	    height: 1px;
+	    border: 0;
+	    border-top: 1px solid black;
+	    margin: 1em 0;
+	    padding: 0;
+	    visibility: visible;
+	}
+}
+/*OUR TEAM END HERE*/

@@ -14,21 +14,14 @@
 Route::get('/','PageController@index');
 Route::get('/auth','PageController@auth');
 
-Route::get('/home', function () {
-    return view('home');
-});
 
 Route::get('/meet-eis', 'PageController@meetEIS');
 
-Route::get('/our-program', function () {
-    return view('our-program');
-});
+Route::get('/our-program','PageController@programs');
 
 Route::get('/contact-us', 'PageController@contactUs');
 
-Route::get('/ask-our-alumni', function () {
-    return view('ask-our-alumni');
-});
+Route::get('/ask-our-alumni','AskController@home');
 
 Route::get('/social-media', function () {
     return view('social-media');
@@ -53,26 +46,31 @@ Route::get('/dashboard/inbox/{id}/reply','DashboardController@messageReply');
 Route::get('/dashboard/inbox/{id}/delete','DashboardController@messageDelete');
 
 Route::get('/dashboard/members', 'DashboardController@membersManager');
+Route::get('/dashboard/programs', 'DashboardController@programsManager');
 Route::get('/dashboard/events/create', 'DashboardController@createEvent');
 Route::get('/dashboard/article/create', 'DashboardController@createArticle');
+Route::get('/dashboard/programs/create', 'DashboardController@createProgram');
 Route::post('/dashboard/events/save', 'EventController@store');
+Route::post('/dashboard/programs/save', 'ProgramController@save');
 Route::post('/dashboard/article/save', 'ArticleController@store');
 Route::get('/dashboard/events/{id}/edit', 'EventController@edit');
+Route::get('/dashboard/programs/{id}/edit', 'ProgramController@edit');
 Route::get('/dashboard/article/{id}/edit', 'ArticleController@edit');
 Route::patch('/dashboard/events/{id}/edit', 'EventController@update');
+Route::patch('/dashboard/programs/{id}/edit', 'ProgramController@update');
 Route::patch('/dashboard/article/{id}/edit', 'ArticleController@update');
 Route::get('/dashboard/events/{id}/delete/confirm', 'DashboardController@eventDeleteConfirm');
 Route::get('/dashboard/article/{id}/delete/confirm', 'DashboardController@articleDeleteConfirm');
+Route::get('/dashboard/program/{id}/delete/confirm', 'ProgramController@showDeleteConfirmation');
 Route::delete('/dashboard/events/{id}/delete', 'EventController@delete');
 Route::delete('/dashboard/article/{id}/delete', 'ArticleController@delete');
+Route::delete('/dashboard/program/{id}/delete', 'ProgramController@delete');
 
 Route::get('/dashboard/research', 'DashboardController@articleManager');
 
 Route::get('/dashboard/event', 'DashboardController@eventManager');
 
-Route::get('/dashboard/program', function () {
-    return view('dashboard-admin-program-manager');
-});
+Route::get('/dashboard/program','DashboardController@programsManager');
 
 Route::get('/dashboard/eis-team', function () {
     return view('dashboard-admin-eisteam-manager');
@@ -90,7 +88,7 @@ Route::post('auth-student','StudentController@reg');
 Route::get('/api/unique/{email}','PageController@checkUnique');
 Route::get('success','PageController@registerSuccess');
 Route::get('/email',function (){
-    \Illuminate\Support\Facades\Mail::send('home',[],function($message){
+    \Illuminate\Support\Facades\Mail::send('home',['articles' => \App\Article::all(),'events' => \App\Event::all()],function($message){
         $message
             ->from('noreply@eisociety.org')
             ->to('rizqyfaishal@hotmail.com')
@@ -101,6 +99,7 @@ Route::get('/email',function (){
 
 Route::post('send','MessageController@sendMessage');
 Route::get('events/{id}','EventController@show');
+Route::get('programs/{id}','ProgramController@show');
 Route::get('p/{hashcode}','AttachmentController@get');
 Route::post('reply','MessageController@reply');
 Route::post('message/{id}/delete','MessageController@delete');
@@ -115,3 +114,14 @@ Route::get('f-student/{id}/delete/confimation','DashboardController@deleteFStude
 Route::get('student/{id}/delete/confimation','DashboardController@deleteStudentConfirmation');
 
 Route::get('/r-and-i/{id}','ArticleController@show');
+Route::get('f/{hashcode}/delete/confirm','AttachmentController@showConfirmation');
+Route::delete('f/{hashcode}/delete','AttachmentController@delete');
+Route::get('ask/new','AskController@newPost');
+Route::post('ask','AskController@save');
+Route::get('ask/{id}','AskController@show');
+Route::get('akun-suspended','PageController@akunSuspended');
+Route::get('akun-rejected','PageController@akunRejected');
+Route::post('send-email','DashboardController@sendMail');
+Route::post('ask/{id}','AskController@saveComment');
+Route::get('ask/{id}/json','PageController@getAskJSON');
+Route::post('ask/{id}/saveComment','AskController@saveComment');

@@ -1,0 +1,115 @@
+div.row.row-table {
+  display: table;
+  margin: 0;
+  width: 100%;
+}
+
+div[class^="col-"].col-table-cell {
+  float: none;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+@media screen and (min-width: 768px) {
+  .right-on-sm-and-up {
+    text-align: right;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  li.hide-on-xs {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  li.hide-on-sm-and-up {
+    display: none;
+  }
+}
+
+.navbar i {
+  color: inherit;
+  font-size: 1.5em;
+}
+
+.site {
+  margin-top: 60px;
+}
+@media screen and (max-width: 1199px) {
+  .site {
+    margin-top: 50px;
+  }
+}
+
+.login-site {
+  background-image: url(../img/header.jpg);
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  min-height: 100vh;
+}
+.login-site .row-table {
+  height: 100vh;
+}
+
+.well-heading {
+  color: #fff;
+}
+.well-heading i, .well-heading h1, .well-heading .form-control {
+  color: #fff;
+}
+.well-heading i {
+  vertical-align: middle;
+}
+.well-heading img {
+  margin: 0 auto;
+}
+.well-heading .title {
+  padding: 20px 0;
+}
+@media screen and (max-width: 500px) {
+  .well-heading .title {
+    font-size: 1.8em;
+    text-align: center;
+  }
+}
+
+.site-content {
+  margin-top: 50px;
+}
+
+.posts .well {
+  margin-bottom: 40px;
+}
+.posts img {
+  width: 80px;
+  height: auto;
+}
+@media screen and (max-width: 600px) {
+  .posts img {
+    width: 50px;
+  }
+}
+.posts .post-like i {
+  font-size: 1.5em;
+  margin-right: 5px;
+  color: #F44336;
+}
+.posts .btn-delete i {
+  font-size: 1.5em;
+  color: #009688;
+}
+
+@media screen and (max-width: 767px) {
+  .profile-detail,
+  .profile-detail h1 {
+    text-align: center;
+  }
+}
+
+.header-content-inner h2 {
+	color:black;
+}

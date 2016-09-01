@@ -46,18 +46,15 @@
     </script>
 </head>
 <body id="page-top">
-<!-- navbar -->
-<header style="background-image: url(viewpost/img/header-viewpost.jpg);">
-    <div class="header-content">
-        <div class="header-content-inner">
-            <h1>{{ $article->title }}</h1>
-            <hr>
-            <p>Posted on : {{ \Carbon\Carbon::parse($article->created_at)->toDayDateTimeString() }}</p>
-            <!-- <p>Sebuah blog, dibuat dengan tujuan memenuhi tugas akhir mata kuliah ppw.</p> -->
-            <a href="#all-post-blog" class="btn btn-primary btn-xl page-scroll">
-                <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
-            </a>
-        </div>
+
+<header class="programs" style="background-image: none">
+    <div class="header-content-inner">
+        <h1>{{ $article->title }}</h1>
+        <hr>
+        <p>Posted on : {{ \Carbon\Carbon::parse($article->created_at)->diffForHumans() }}</p>
+        <a href="#all-post-blog" class="btn btn-primary btn-xl page-scroll">
+            <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+        </a>
     </div>
 </header>
 <!--The Post-->

@@ -8,6 +8,7 @@ use App\Article;
 use App\Event;
 use App\FutureStudent;
 use App\Message;
+use App\Program;
 use App\Student;
 use App\User;
 use Illuminate\Http\Request;
@@ -16,6 +17,8 @@ use App\Http\Requests;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Session;
+use Snowfire\Beautymail\Beautymail;
+use Snowfire\Beautymail\BeautymailFacade;
 
 class DashboardController extends Controller
 {
@@ -178,6 +181,10 @@ class DashboardController extends Controller
         ]);
     }
 
+    public function createProgram(){
+        return view('dashboard-admin-program-create');
+    }
+
     public function eventManager(){
         return view('dashboard-admin-event-manager')->with([
             'events' => Event::all()
@@ -187,6 +194,12 @@ class DashboardController extends Controller
     public function articleManager(){
         return view('dashboard-admin-randi-manager')->with([
             'articles' => Article::all()
+        ]);
+    }
+
+    public function programsManager(){
+        return view('dashboard-admin-program-manager')->with([
+            'programs' => Program::all()
         ]);
     }
 
@@ -209,4 +222,20 @@ class DashboardController extends Controller
             'article' => $article
         ]);
     }
+
+    public function sendMail(Requests\SendEmailRequest $request){
+        $to = $request->input('to');
+        $to = $to[0];
+        $message_x = $request->input('messages');
+        BeautymailFacade::queue('emails.welcome', [], function($message)
+        {
+            $message
+                ->from('bar@example.com')
+                ->to('rizqyfaishal@hotmail.com', 'John Smith')
+                ->subject('Welcome!');
+        });
+        return redirect(action('DashboardController@inbox'));
+    }
+
+
 }

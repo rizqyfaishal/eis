@@ -8,6 +8,7 @@ use App\Helper\PageDescription;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use Illuminate\Support\Facades\Session;
 
 class AttachmentController extends Controller
 {
@@ -40,7 +41,6 @@ class AttachmentController extends Controller
         if(is_null($file)){
             abort(404);
         }
-
         $bool = $file->delete();
         if(!$bool){
             abort(500);
@@ -48,5 +48,14 @@ class AttachmentController extends Controller
         return redirect()->back();
     }
 
+    public function showConfirmation($hashcode){
+        $file = Attachment::where('hashcode','=',$hashcode)->first();
+        if(is_null($file)){
+            abort(404);
+        }
+        return view('dashboard-admin-file-confirmation-delete')->with([
+            'file' => $file
+        ]);
+    }
 
 }

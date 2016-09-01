@@ -1,0 +1,489 @@
+@font-face {
+	font-family: 'Avenir Book';
+	src: url('../fonts/AvenirLTStd-Book.otf');
+}
+
+/*
+Color List
+Brown  Dark : #C9AE8A
+Brown  Light: #F0E2BC
+Cyan   Dark : #CCE6D2
+Cyan   Light: #E3F2DC
+Blue   Dark : #AABCD2
+Blue   Light: #D3F0F4
+Purple Dark : #DCC5C1
+Purple Light: #FBEAE9
+Gray   Dark : #E7E1E1
+Gray   Light: #E5DFEC
+*/
+
+#all-post-blog img{
+	display: block;
+	margin: 1em auto;
+}
+
+
+
+.ask-content {
+	position: relative;
+	margin-left: 7em;
+	padding-right: 2em;
+}
+.ask-content .avatar {
+	position: absolute;
+	top: 0;
+	left: -6em;
+	padding: 5px;
+	border: 1px solid #EEEEEE;
+}
+
+.ask-container {
+	margin-top: 2em;
+}
+
+.event-container,
+.event-detail {
+	background-color: #ffffff;
+	margin: 2em 0;
+	box-shadow: 0px 0px 5px #aaaaaa;
+}
+
+.event-detail .event-date-time {
+	padding: 2em;
+	background-color: rgba(56, 56, 56, 0.6);
+	color: rgba(246, 246, 246, 0.6);
+}
+
+.event-detail .event-location {
+	padding: 2em;
+}
+.event-container img {
+	width: 100%;
+
+}
+
+.event-container .event-content {
+	padding: 2em;
+}
+
+.event-content-body img {
+	width: 100%;
+}
+
+body {
+	background-image: url("../img/bg.png");
+	background-size: cover;
+}
+
+.font-avenir-book{
+	font-family: 'Avenir Book';
+}
+
+.hexa-up {
+	position: fixed;
+	left: 68%;
+	z-index: -1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";       /* IE 8 */
+	filter: alpha(opacity=70);  /* IE 5-7 */
+	-moz-opacity: 0.7;          /* Netscape */
+	-khtml-opacity: 0.7;        /* Safari 1.x */
+	opacity: 0.7;               /* Good browsers */
+}
+
+.hexa-down {
+	position: fixed;
+	top: 85%;
+	left: 70%;
+	z-index: -1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";       /* IE 8 */
+	filter: alpha(opacity=70);  /* IE 5-7 */
+	-moz-opacity: 0.7;          /* Netscape */
+	-khtml-opacity: 0.7;        /* Safari 1.x */
+	opacity: 0.7;               /* Good browsers */
+}
+
+.eis-mark {
+	position: fixed;
+	left: 2%;
+	top: 90%;
+	z-index: -1;
+}
+
+.header-logo {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+.whole-content {
+	padding-bottom: 5em;
+}
+.header-logo img {
+	padding-top: 2%;
+	display: block;
+	margin: 0 auto;
+}
+
+.thumbnail-wrapper .thumbnail .thumbnail-image .object-fit {
+	max-height: 100%;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+
+}
+.nav-bar ul.dropdown-menu  li a:visited, .header-ul li a:link {
+	color: #0a0a0a!important;
+}
+
+.media-grid {
+	list-style: none;
+}
+
+.media-grid li.media-list-item {
+	float: left;
+	padding: 3px;
+}
+
+.nav-bar {
+	background-color: rgba(157,157,157,.7);
+	padding-top: 1em;
+	padding-bottom: 1em;
+	margin-top: 2%;
+}
+
+.header-ul {
+	margin: 0 auto;
+	display: table;
+}
+
+.header-ul li {
+	list-style: none;
+	float: left;
+	padding: 0px 8px 0px 8px;
+	font-family: "Avenir Book";
+	font-size: 18px;
+	border-right: 2px solid white;
+}
+
+.header-ul li:last-child {
+	border: none;
+}
+
+.header-ul li a:visited, .header-ul li a:link {
+	text-decoration: none;
+	color: white;
+}
+
+.header-ul li a:active, .header-ul li a:hover {
+	text-decoration: none;
+	color: gray;
+}
+
+.floating-widget {
+	position: fixed;
+	left: 96%;
+	top: 30%;
+	height: 200px;
+	width: 80px;
+	border-radius: 10px;
+	background-color: white;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";       /* IE 8 */
+	filter: alpha(opacity=80);  /* IE 5-7 */
+	-moz-opacity: 0.8;          /* Netscape */
+	-khtml-opacity: 0.8;        /* Safari 1.x */
+	opacity: 0.8;               /* Good browsers */
+}
+
+.floating-widget ul {
+	display: table;
+}
+
+.floating-widget ul li {
+	list-style: none;
+	font-size: 56px;
+	line-height: 60px;
+}
+
+.floating-widget li a:hover .icon-facebook {
+	color: darkblue;
+}
+
+.floating-widget li a:hover .icon-twitter {
+	color: dodgerblue;
+}
+
+.floating-widget li a:hover .icon-google {
+	color: red;
+}
+
+.icon-facebook {
+	position: absolute;
+	left: 20%;
+	top: 5%;
+	color: #9d9d9d;
+	border-radius: 10px;
+	background-color: white;
+}
+
+.icon-twitter {
+	position: absolute;
+	left: 20%;
+	top: 35%;
+	color: #9d9d9d;
+	border-radius: 10px;
+	background-color: white;
+}
+
+.icon-google {
+	position: absolute;
+	left: 20%;
+	top: 65%;
+	color: #9d9d9d;
+	border-radius: 10px;
+	background-color: white;
+}
+
+.post-title {
+	font-family: "Avenir Book";
+	text-align: center;
+	font-size: 36px;
+	margin-top: 5%;
+	padding-bottom: 20px;
+}
+
+.whole-content {
+	margin-top: 2%;
+}
+
+.content-update {
+	border-right: 3px solid gray;
+}
+
+.content-ri {
+	border-right: 3px solid gray;
+}
+
+.content-upcoming {
+
+}
+
+.article p {
+	font-family: "Avenir Book";
+	font-size: 18px;
+	padding: 10px 50px 10px 50px;
+	text-align: justify;
+}
+
+.footer-copyright {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	margin-top: 3%;
+}
+
+.footer-copyright p a:visited, .footer-copyright p a:link {
+	text-decoration: none;
+	color: white;
+}
+
+.footer-copyright p a:hover, .footer-copyright p a:active {
+	text-decoration: none;
+	color: gray;
+}
+
+/*CONTACT US STARTS HERE*/
+#maps {
+	height:450px;
+	width: 500px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 1em;
+}
+/*CONTACT US ENDS HERE*/
+
+/*OUR TEAM START HERE*/
+
+.img-team-member {
+	border-radius: 50%;
+	max-width: 200px;
+}
+
+.h-team-member {
+
+	font-size: 18px;
+	padding: 10px 50px 10px 50px;
+	text-align: justify;
+	font-weight: 900;
+}
+
+.p-team-member {
+
+}
+
+.whoweare {
+	font-family: "Avenir Book";
+	font-size: 80px;
+	font-weight: 20;
+}
+
+.post-title-team-member {
+	font-family: "Avenir Book";
+	text-align: center;
+	font-size: 36px;
+	margin-top: 3%;
+	/*padding-bottom: 20px;*/
+}
+
+.the-line {
+	border-right: 3px solid gray;
+}
+
+.dummy {
+	visibility: hidden;
+}
+
+.finance {
+	margin-top: 120px;
+}
+
+.secretary {
+	margin-top: 40px;
+}
+
+.internal-artsport {
+	margin-top: 30px;
+}
+/*
+.internal-marketing {
+	margin-top: 100px;
+}
+
+.internal-project {
+	margin-top: 100px;
+}
+*/
+.jarak-atas{
+	margin-top: 100px;
+}
+
+.pembatas-hp {
+	display: block;
+	height: 0px;
+	border: 0;
+	border-top: 0px solid black;
+	margin: 0 0;
+	padding: 0;
+	visibility: hidden;
+}
+
+@media screen and (max-width: 480px) and (min-width: 100px) {
+	.pembatas-hp {
+		display: block;
+		height: 1px;
+		border: 0;
+		border-top: 1px solid black;
+		margin: 1em 0;
+		padding: 0;
+		visibility: visible;
+	}
+}
+/*OUR TEAM END HERE*/
+
+.dashboard-content {
+	padding-top: 2em;
+	padding-bottom: 3em;
+}
+
+/*OUR PROGRAM START HERE*/
+
+.title-program-page {
+	font-family: "Avenir Book";
+	font-size: 60px;
+	font-weight: bold;
+	padding-bottom: 20px;
+}
+
+.form-contact-us {
+	padding: 2em;
+	border-radius: 4px;
+	background-color: #ffffff;
+}
+
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th {
+    vertical-align: middle!important;
+}
+
+.table form {
+    display: inline-block;
+}
+
+.program-block {
+	border-style: double;
+}
+
+.input-group-addon {
+	min-width: 12em;
+	text-align: left!important;
+}
+
+.form-change .input-group-addon{
+	min-width: 14em;
+	text-align: left!important;
+}
+
+.auth-form{
+	padding-top: 3em;
+	padding-bottom: 3em;
+}
+
+.dataTables_wrapper {
+	padding: 1em 2em;
+}
+#register .auth-form {
+	padding-top: 1em;
+	padding-bottom: 3em;}
+.program-block a{
+	text-decoration: none;
+	color: black;
+	font-style: italic;
+}
+
+.login {
+	padding-bottom: 3em;
+}
+
+.login-section {
+	padding-top: 2em;
+}
+.tab-pane.active {
+	background-color: #ffffff;
+	border: 1px solid #ddd;
+	border-radius: 4px 4px 0 0;
+	border-top: none;
+}
+
+.tab-pane .select-category-area {
+	padding-top: 2em;
+}
+
+.program-block-middle {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.program-img-ins {
+	padding: 20px;
+}
+
+/*OUR PROGRAM END HERE*/
+
+.tweet-eis {
+	overflow-y: scroll;
+	max-height: 500px;
+}
+

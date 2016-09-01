@@ -1,0 +1,27 @@
+<div class="input-form">
+    <form method="POST" ng-attr-action="<% ask_url + id %>" accept-charset="UTF-8" ng-if="showForm">
+        <input type="hidden" name="_token" ng-attr-value="token">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="form-group">
+                    <textarea class="tinymce" name="comment" cols="50" rows="10"></textarea>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="form-group">
+                    <button style="display: block;float: right;" class="btn btn-primary"><i class="fa fa-pencil">&nbsp;</i>Post</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="ask-reply-button">
+        <div class="form-group">
+            <button type="button" ng-click="showCommentForm(id)" class="btn btn-primary">
+                <i class="fa fa-reply">&nbsp;</i>Reply
+            </button>
+        </div>
+    </div>
+</div>
