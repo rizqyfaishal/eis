@@ -19,7 +19,7 @@
                     <strong>Success! &nbsp;</strong> Pengiriman Sukses
                 </div>
             @endif
-            {!! Form::model($message = new \App\Message(),['method' => 'POST', 'action' => ['MessageController@sendMessage'], 'class' => 'form-contact-us']) !!}
+            {!! \Collective\Html\FormFacade::model($message = new \App\Message(),['method' => 'POST', 'action' => ['MessageController@sendMessage'], 'class' => 'form-contact-us']) !!}
                 @if(!$authAvailable)
                     <div class="row">
                         <div class="col-lg-6">
