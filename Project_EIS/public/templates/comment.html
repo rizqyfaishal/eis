@@ -3,7 +3,7 @@
     <div ng-class="{'col-lg-<% 12 - level %>': true, 'col-lg-offset-<% level %>': true }">
         <div class="ask-comment-list">
             <div class="avatar">
-                <img src="http://localhost:8000/img/user.png" alt="Avatar">
+                <img ng-src="<% ask.author.avatar == null ? '/img/user.png' : '/p/' + ask.author.avatar.hashcode %>" alt="Avatar" width="50">
             </div>
             <div class="ask-comment-content">
                 <div class="ask-comment-details">

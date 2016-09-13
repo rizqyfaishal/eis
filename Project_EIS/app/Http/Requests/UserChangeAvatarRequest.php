@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use App\Http\Requests\Request;
 
-class SendEmailRequest extends Request
+class UserChangeAvatarRequest extends Request
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,9 +24,7 @@ class SendEmailRequest extends Request
     public function rules()
     {
         return [
-            'to' => 'required|array',
-            'subject' => 'required',
-            'messages' => 'required'
+            'avatar' => 'required|max:2048|mimes:jpg,jpeg,png'
         ];
     }
 }

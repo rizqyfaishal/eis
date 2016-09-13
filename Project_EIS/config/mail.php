@@ -55,7 +55,7 @@ return [
     |
     */
 
-    'from' => ['address' => 'noreply@eisociety.org', 'name' => 'EIS Society'],
+    'from' => ['address' => 'admin@eisociety.org', 'name' => 'EIS Society'],
 
     /*
     |--------------------------------------------------------------------------

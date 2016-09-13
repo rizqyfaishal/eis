@@ -217,22 +217,33 @@
                                 scope.replyMessage = null;
                             };
                             scope.post = function (id,replyMessage) {
-                                scope.loading = true;
-                                var param = $.param({
-                                    content: replyMessage,
-                                    _token: $rootScope.token
-                                });
-                                $http.post(ASK_URL + id + '/saveComment',param,{
-                                    headers: {
-                                        'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8;'
-                                    }
-                                }).success(function (res) {
-                                    scope.replyMessage = null;
-                                    scope.ask.temp.unshift(res.data);
-                                    $rootScope.commentCounts = $rootScope.commentCounts + 1;
-                                    scope.showForm = false;
-                                    scope.loading = false;
-                                });
+                                if(replyMessage == null || replyMessage == ''){
+                                    alert('Comment must be a value');
+                                } else {
+                                    scope.loading = true;
+                                    var param = $.param({
+                                        content: replyMessage,
+                                        _token: $rootScope.token
+                                    });
+                                    $http.post(ASK_URL + id + '/saveComment',param,{
+                                        headers: {
+                                            'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8;'
+                                        }
+                                    }).success(function (res) {
+                                        if(res.status){
+                                            scope.replyMessage = null;
+                                            scope.ask.temp.unshift(res.data);
+                                            $rootScope.commentCounts = $rootScope.commentCounts + 1;
+                                            scope.showForm = false;
+                                            scope.loading = false;
+                                        } else {
+                                            window.location.href = res.redirectTo;
+                                        }
+                                    }).error(function (msg) {
+                                        alert('Error found - please reload your browser');
+                                    });
+                                }
+
 
                             }
                         }

@@ -12,6 +12,13 @@
 
         <div class="well">
             <h3>Send Email</h3>
+            @if(\Illuminate\Support\Facades\Session::has('email_sended_success'))
+                <div class="alert alert-success alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                    <strong>Pengiriman Sukses &nbsp;</strong>
+                </div>
+            @endif
             {!! Form::open(['action' => ['DashboardController@sendMail'],'method' => 'POST']) !!}
             <div class="row">
                 <div class="col-lg-10">
@@ -25,6 +32,23 @@
                         @if($errors->has('to'))
                             <span class="help-block">
                               <strong>{{ $errors->first('to') }}</strong>
+                            </span>
+                        @endif
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10">
+                    <div class="form-group {{ $errors->has('subject') ? 'has-error' : '' }}">
+                        <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="fa fa-balance-scale">&nbsp;</i>Subject
+                        </span>
+                            {!! Form::text('subject',null,['class' => 'form-control','placeholder' => 'Subject']) !!}
+                        </div>
+                        @if($errors->has('subject'))
+                            <span class="help-block">
+                              <strong>{{ $errors->first('subject') }}</strong>
                             </span>
                         @endif
                     </div>

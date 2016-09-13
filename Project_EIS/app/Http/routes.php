@@ -125,3 +125,12 @@ Route::post('send-email','DashboardController@sendMail');
 Route::post('ask/{id}','AskController@saveComment');
 Route::get('ask/{id}/json','PageController@getAskJSON');
 Route::post('ask/{id}/saveComment','AskController@saveComment');
+Route::get('dashboard-user','DashboardUserController@home');
+
+Route::get('user/changePassword','DashboardUserController@gantiPassword');
+Route::post('user/changePassword','DashboardUserController@gantiPasswordPost');
+Route::post('user/changeAvatar','DashboardUserController@gantiAvatarPost');
+Route::get('user/changeAvatar','DashboardUserController@gantiAvatar');
+
+Route::get('emailTemplate','PageController@emailTemplate');
+Route::post('reply-message','DashboardController@sendMailReply');

@@ -10,6 +10,17 @@
     <div class="login" ng-app="app">
         <div class="login-content">
             <div class="row">
+                <div class="col-lg-4 col-lg-offset-4">
+                    @if(\Illuminate\Support\Facades\Session::has('login_message'))
+                        <div class="alert alert-danger alert-dismissible" role="alert" style="margin-top: 2em;">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+                                        aria-hidden="true">&times;</span></button>
+                            <strong>Warning!</strong>{{ \Illuminate\Support\Facades\Session::get('login_message') }}
+                        </div>
+                    @endif
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-lg-6 col-lg-offset-3">
                     <div class="login-section">
                         <div class="login-tabs">

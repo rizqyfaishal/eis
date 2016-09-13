@@ -33,7 +33,7 @@
                                     <i class="fa fa-file-text">&nbsp;</i>
                                     Message
                                 </span>
-                                <textarea class="form-control" disabled>{{ $message->message }}</textarea>
+                                <textarea class="form-control" disabled rows="10">{{ $message->message }}</textarea>
                             </div>
                         </div>
                     </div>

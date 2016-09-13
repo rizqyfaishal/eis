@@ -225,16 +225,37 @@ class DashboardController extends Controller
 
     public function sendMail(Requests\SendEmailRequest $request){
         $to = $request->input('to');
-        $to = $to[0];
-        $message_x = $request->input('messages');
-        BeautymailFacade::queue('emails.welcome', [], function($message)
+        $content = $request->input('messages');
+        $subject = $request->input('subject');
+
+        BeautymailFacade::queue('emails.welcome', ['content' => $content], function($message) use($to,$subject)
+        {
+            foreach ($to as $emailTo) {
+                $message
+                    ->from('admin@eiscoiety.org')
+                    ->to($emailTo, 'John Smith')
+                    ->subject($subject);
+            }
+        });
+
+        Session::flash('email_sended_success',true);
+        return redirect()->back();
+    }
+
+    public function sendMailReply(Requests\MessageInboxReplyRequest $request){
+        $to = $request->input('to');
+        $content = $request->input('messages');
+        $subject = $request->input('subject');
+        BeautymailFacade::queue('emails.welcome', ['content' => $content], function($message) use($to,$subject)
         {
             $message
-                ->from('bar@example.com')
-                ->to('rizqyfaishal@hotmail.com', 'John Smith')
-                ->subject('Welcome!');
+                ->from('admin@eiscoiety.org')
+                ->to($to, 'John Doe')
+                ->subject($subject);
         });
-        return redirect(action('DashboardController@inbox'));
+
+        Session::flash('email_sended_success',true);
+        return redirect()->back();
     }
 
 

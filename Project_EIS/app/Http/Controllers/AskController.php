@@ -11,14 +11,9 @@ use Illuminate\Support\Facades\Session;
 
 class AskController extends Controller
 {
-//    public function __construct()
-//    {
-//        $this->middleware('discussion',['except' => 'home']);
-//    }
 
     public function home(){
         return view('ask-our-alumni')->with([
-            'id' => Auth::user()->id,
             'asks' => Ask::where('isRoot','=',1)->paginate(15)
         ]);
     }
@@ -40,7 +35,11 @@ class AskController extends Controller
     public function saveComment($id, Requests\AskReplyRequest $request){
         $user = Auth::user();
         if(is_null($user)){
-            abort(404);
+            Session::flash('login_message','You must login first');
+            return response()->json([
+                'status' => false,
+                'redirectTo' => action('Auth\AuthController@showLoginForm')
+            ]);
         }
         $ask = Ask::find($id);
         if(is_null($ask)){
@@ -50,7 +49,7 @@ class AskController extends Controller
         $ask_new->ask_content = $request->input('content');
         $user->asks()->save($ask_new);
         $ask->reply()->save($ask_new);
-        $ask->updateCommentsCount();
+        $ask_new->updateCommentsCount();
         return response()->json([
             'status' => true,
             'data' => $ask_new->load('parent','author')
@@ -65,8 +64,8 @@ class AskController extends Controller
         $ask = new Ask();
         $ask->ask_subject = $request->input('ask_subject');
         $ask->ask_content = $request->input('ask_content');
+        $ask->isRoot = true;
         $auth->asks()->save($ask);
-        $ask->category()->sync($request->input('ask_category'));
         Session::flash('ask_created',true);
         return redirect(action('AskController@home'));
     }

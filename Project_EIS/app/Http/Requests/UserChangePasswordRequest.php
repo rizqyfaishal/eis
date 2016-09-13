@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use App\Http\Requests\Request;
 
-class SendEmailRequest extends Request
+class UserChangePasswordRequest extends Request
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,9 +24,8 @@ class SendEmailRequest extends Request
     public function rules()
     {
         return [
-            'to' => 'required|array',
-            'subject' => 'required',
-            'messages' => 'required'
+            'old_password' => 'required',
+            'password' => 'required|confirmed'
         ];
     }
 }

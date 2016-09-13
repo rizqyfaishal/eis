@@ -17,7 +17,7 @@
                 <div class="col-lg-9">
                     {!! Form::model($ask = new \App\Ask(),['action' => ['AskController@save'],'method' => 'POST']) !!}
                         <div class="row">
-                            <div class="col-lg-6">
+                            <div class="col-lg-12">
                                 <div class="form-group {{ $errors->has('ask_subject') ? 'has-error' : '' }}">
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="fa fa-tag">&nbsp;</i>Discussion Subject</span>
@@ -29,20 +29,6 @@
                                         </span>
                                     @endif
                                 </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="form-group {{ $errors->has('ask_category') ? 'has-error' : '' }}">
-                                    <div class="input-group">
-                                        <span class="input-group-addon"><i class="fa fa-tag">&nbsp;</i>Category</span>
-                                        {!! Form::select('ask_category[]',\App\AskCategory::lists('name','id'),null,['class' => 'form-control' , 'multiple' => true]) !!}
-                                    </div>
-                                    @if($errors->has('ask_category'))
-                                        <span class="help-block">
-                                            <strong>{{ $errors->first('ask_category') }}</strong>
-                                        </span>
-                                    @endif
-                                </div>
-
                             </div>
                         </div>
                     <div class="row">

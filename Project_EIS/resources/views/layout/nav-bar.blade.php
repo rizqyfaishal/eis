@@ -9,18 +9,25 @@
                     <li><a href="/our-program">Our Program</a></li>
                     <li><a href="/contact-us">Contact Us</a></li>
                     <li><a href="/ask-our-alumni">Ask Our Alumni</a></li>
-                    @if(!is_null(\Illuminate\Support\Facades\Auth::user()))
-                        @if(\Illuminate\Support\Facades\Auth::user()->user_type == 'App\Admin')
+                    @if(!is_null($auth = \Illuminate\Support\Facades\Auth::user()))
+                        @if($auth->user_type == 'App\Admin')
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                                   role="button" aria-haspopup="true" aria-expanded="false">{{ \Illuminate\Support\Facades\Auth::user()->fname.' '.\Illuminate\Support\Facades\Auth::user()->lname }} <span class="caret"></span></a>
+                                   role="button" aria-haspopup="true" aria-expanded="false">{{ $auth->fname.' '.$auth->lname }} <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="{{ action('DashboardController@home') }}"><i class="fa fa-home">&nbsp;</i>Dashboard</a></li>
                                     <li><a href="{{ action('Auth\AuthController@logout') }}"><i class="fa fa-sign-out">&nbsp;</i>Logout</a></li>
                                 </ul>
                             </li>
                         @else
-                            <li><a href="{{ action('Auth\AuthController@logout') }}"><i class="fa fa-sign-out">&nbsp;</i>Logout</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                                   role="button" aria-haspopup="true" aria-expanded="false">{{ $auth->fname.' '.$auth->lname }} <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="{{ action('DashboardUserController@home') }}"><i class="fa fa-home">&nbsp;</i>Dashboard</a></li>
+                                    <li><a href="{{ action('Auth\AuthController@logout') }}"><i class="fa fa-sign-out">&nbsp;</i>Logout</a></li>
+                                </ul>
+                            </li>
                         @endif
 
                     @else

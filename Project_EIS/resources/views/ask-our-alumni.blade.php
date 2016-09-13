@@ -48,7 +48,7 @@
                                 <td>{{ \Carbon\Carbon::parse($ask->created_at)->toDayDateTimeString() }}</td>
                                 <td><a href="{{ action('AskController@show',$ask->id) }}">{{ $ask->ask_subject }}</a></td>
                                 <td>{{ $ask->author->email }}</td>
-                                <td>{{ count($ask->reply) }} Comments</td>
+                                <td>{{ $ask->comments_count - 1 }} Comments</td>
                                 <td>
                                     @if($ask->reply)
                                         No reply

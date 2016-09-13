@@ -25,8 +25,7 @@ class AskRequest extends Request
     {
         return [
             'ask_subject' => 'required|max:255',
-            'ask_content' => 'required',
-            'ask_category' => 'required|array'
+            'ask_content' => 'required'
         ];
     }
 }

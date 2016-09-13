@@ -15,6 +15,7 @@ class User extends Authenticatable
         'email', 'password','fname','lname','phone'
     ];
 
+    protected $with = ['user','avatar'];
     /**
      * The attributes that should be hidden for arrays.
      *
@@ -34,5 +35,9 @@ class User extends Authenticatable
 
     public function asks(){
         return $this->hasMany('App\Ask');
+    }
+
+    public function avatar(){
+        return $this->morphOne('App\Attachment','attach');
     }
 }

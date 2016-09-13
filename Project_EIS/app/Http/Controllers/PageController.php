@@ -112,6 +112,10 @@ class PageController extends Controller
         return view('register-rejected');
     }
 
+    public function emailTemplate(){
+        return view('emails.welcome');
+    }
+
 
 
 }
