@@ -16,6 +16,9 @@
     @yield('add-css')
 </head>
 <body>
+<div id="logo-ui">
+    <img src="{{ URL::asset('img/logo-ui.png') }}" alt="Logo UI" width="180" style="margin-left: 2em;">
+</div>
 <div id="overlay">
     <div class="overlay-content">
         <img src="{{ URL::asset('img/EIS_logo_text.gif') }}" alt="Loader" style="margin: -2em auto;display: block;">
