@@ -59,7 +59,8 @@ class AskController extends Controller
     public function save(Requests\AskRequest $request){
         $auth = Auth::user();
         if(is_null($auth)){
-            abort(500);
+            Session::flash('login_message','You must login first.');
+            return redirect(action('Auth\AuthController@showLoginForm'));
         }
         $ask = new Ask();
         $ask->ask_subject = $request->input('ask_subject');
