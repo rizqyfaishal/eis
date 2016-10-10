@@ -68,7 +68,7 @@ class PageController extends Controller
 
     public function meetEIS(){
         $description = Admin::first()->description;
-        return view('meet-eis')->with([
+        return view('meet2')->with([
             'description' => $description
         ]);
     }

@@ -346,7 +346,12 @@ body {
 	font-family: "Avenir Book";
 	font-size: 18px;
 	padding: 10px 50px 10px 50px;
-	text-align: justify;
+}
+
+.right-content .article .p,
+.left-content .article .p{
+    font-family: "Avenir Book";
+    font-size: 18px;
 }
 
 .footer-copyright {
@@ -378,10 +383,9 @@ body {
 
 /*OUR TEAM START HERE*/
 
-.img-team-member {
-	border-radius: 50%;
-	max-width: 200px;
-}
+/*.img-team-member {*/
+	/*border-radius: 50%;*/
+/*}*/
 
 .h-team-member {
 
@@ -477,6 +481,87 @@ body {
 	margin: 2em auto;
 }
 
+/*.stellar {*/
+	/*position: relative;*/
+/*}*/
+
+.meet {
+	margin-top: 2em;
+	position: relative;
+}
+
+.image-circle {
+	display: block;
+	margin: 0 auto;
+    width: 220px;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.image-circle.xxx {
+    width: 200px;
+    height: 200px;
+}
+
+.left-content {
+    width: 50%;
+    float: left;
+    padding: 2em 0;
+}
+
+.right-content{
+    width: 50%;
+    float: left;
+    padding: 2em 0;
+}
+
+.left-m {
+    /*margin-left: 6em;*/
+}
+
+.right-container .qqq{
+    margin-left: 3em;
+}
+
+.right-container .qq .box {
+    margin: 2em 0;
+}
+.image-circle img {
+    width: 220px;
+    margin-top: 2em;
+}
+.box {
+	margin: 1em auto;
+	text-align: center;
+    clear: both;
+}
+
+.qqq{
+	display: table;
+    width: 100%;
+}
+.ppp {
+	height: 90vh;
+	display: table-cell;
+	vertical-align: middle;
+}
+.left-container,
+.right-container {
+	position: relative;
+	display: block;
+}
+
+.left-container {
+	width: 35%;
+	border-right: 5px solid #b1b1b1;
+	float: left;
+}
+
+.right-container {
+	width: 64%;
+	float: left;
+}
 #overlay {
 	z-index: 10000;
 	position: fixed;

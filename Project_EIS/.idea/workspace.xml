@@ -39,25 +39,42 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
+      <file leaf-file-name="master.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/layout/master.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="549">
-              <caret line="78" column="63" selection-start-line="78" selection-start-column="63" selection-end-line="78" selection-end-column="63" />
+            <state relative-caret-position="850">
+              <caret line="50" column="10" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="master.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/layout/master.blade.php">
+      <file leaf-file-name="jquery.stellar.min.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/jquery.stellar.min.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="19" column="101" selection-start-line="19" selection-start-column="101" selection-end-line="19" selection-end-column="101" />
-              <folding>
-                <element signature="n#style#0;n#img#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="meet-eis.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/meet-eis.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1343">
+              <caret line="79" column="26" selection-start-line="68" selection-start-column="20" selection-end-line="79" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PageController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PageController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="986">
+              <caret line="70" column="26" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -65,31 +82,33 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="482" column="12" selection-start-line="482" selection-start-column="12" selection-end-line="482" selection-end-column="12" />
+            <state relative-caret-position="439">
+              <caret line="544" column="17" selection-start-line="544" selection-start-column="17" selection-end-line="544" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EIS_logo.gif" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/img/EIS_logo.gif">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EIS_logo_edit.gif" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/img/EIS_logo_edit.gif">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EIS_logo_edit.psd" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/img/EIS_logo_edit.psd">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="meet2.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/meet2.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+              <folding>
+                <element signature="e#189#625#0#HTML" expanded="false" />
+                <element signature="e#637#1420#0#HTML" expanded="false" />
+                <element signature="e#1899#2354#0#HTML" expanded="false" />
+                <element signature="e#1899#2354#0#HTML" expanded="false" />
+                <element signature="e#3859#7438#0#HTML" expanded="false" />
+                <element signature="e#3931#4904#0#HTML" expanded="false" />
+                <element signature="e#4423#4428#0#HTML" expanded="true" />
+                <element signature="e#4429#4435#0#HTML" expanded="true" />
+                <element signature="e#4450#4456#0#HTML" expanded="true" />
+                <element signature="e#4925#5704#0#HTML" expanded="false" />
+                <element signature="e#5725#6552#0#HTML" expanded="false" />
+                <element signature="e#6849#6854#0#HTML" expanded="true" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
@@ -130,8 +149,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/dashboard-admin-program-manager.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layout/hexa-up.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/dashboard-admin-program-delete-confirm.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/AttachmentController.php" />
@@ -160,7 +177,6 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/DashboardUserController.php" />
         <option value="$PROJECT_DIR$/public/templates/comment.html" />
         <option value="$PROJECT_DIR$/app/Ask.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/PageController.php" />
         <option value="$PROJECT_DIR$/resources/views/emails/templates/minty.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/emails/welcome.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/dashboard-admin-message-view.blade.php" />
@@ -178,9 +194,12 @@
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/AskController.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
-        <option value="$PROJECT_DIR$/public/css/style.css" />
         <option value="$PROJECT_DIR$/public/js/app.js" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/PageController.php" />
         <option value="$PROJECT_DIR$/resources/views/layout/master.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/meet-eis.blade.php" />
+        <option value="$PROJECT_DIR$/public/css/style.css" />
+        <option value="$PROJECT_DIR$/resources/views/meet2.blade.php" />
       </list>
     </option>
   </component>
@@ -232,7 +251,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -249,68 +267,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Project_EIS" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project_EIS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project_EIS" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project_EIS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project_EIS" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project_EIS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project_EIS" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -360,8 +316,31 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project_EIS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project_EIS" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="team" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -370,21 +349,21 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="SearchEverywhereHistoryKey" value="ap&#9;FILE&#9;file://D:/projects/eis/Project_EIS/public/js/app.js&#10;s&#9;FILE&#9;file://D:/projects/eis/Project_EIS/public/css/style.css&#10;sty&#9;FILE&#9;file://D:/projects/eis/Project_EIS/public/css/style.css&#10;app&#9;FILE&#9;file://D:/projects/eis/Project_EIS/public/js/app.js&#10;vi&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/viewpost.blade.php&#10;Program&#9;null&#9;null&#10;prog&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/our-program.blade.php&#10;Ask&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/AskController.php&#10;login&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/login.blade.php&#10;logi&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/auth/login.blade.php&#10;AskCon&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/AskController.php&#10;Das&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/DashboardController.php&#10;ask-our&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/ask-our-alumni.blade.php&#10;As&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/AskController.php&#10;rou&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/routes.php&#10;ask-n&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/ask-new-post.blade.php&#10;ask-o&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/ask-our-alumni.blade.php&#10;ask&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/ask-show.blade.php&#10;ask-sh&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/ask-show.blade.php&#10;angu&#9;FILE&#9;file://D:/projects/eis/Project_EIS/public/js/angular-script-discussion.js&#10;Da&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/DashboardController.php&#10;send&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/dashboard-admin-send.blade.php&#10;emai&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/emails/email.blade.php&#10;Dash&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/DashboardController.php&#10;Page&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/PageController.php&#10;P&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/PageController.php&#10;ro&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/routes.php&#10;Pa&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/PageController.php&#10;das&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/DashboardController.php&#10;Pag&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/PageController.php&#10;UserCha&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Requests/UserChangeAvatarRequest.php&#10;User&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/User.php&#10;UserCh&#9;null&#9;null&#10;route&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/routes.php&#10;nav&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/layout/nav-dashboard-user.blade.php&#10;kernel&#9;null&#9;null&#10;DashboardUse&#9;null&#9;null&#10;lof&#9;null&#9;null&#10;as&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/ask-show.blade.php&#10;ask-sho&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/ask-show.blade.php&#10;ask-&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/ask-our-alumni.blade.php&#10;routes&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/routes.php&#10;Dis&#9;null&#9;null&#10;st&#9;FILE&#9;file://D:/projects/eis/Project_EIS/public/css/style.css&#10;ask-s&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/ask-show.blade.php&#10;event-s&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/event-show.blade.php&#10;AskCOn&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/AskController.php&#10;ang&#9;FILE&#9;file://D:/projects/eis/Project_EIS/public/js/angular-script-discussion.js&#10;D&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/DashboardController.php&#10;config/a&#9;FILE&#9;file://D:/projects/eis/Project_EIS/config/app.php" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/projects/eis/Project_EIS/public/css/style.css&#10;me&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/meet2.blade.php&#10;sty&#9;FILE&#9;file://D:/projects/eis/Project_EIS/public/css/style.css&#10;Pa&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/PageController.php&#10;ap&#9;FILE&#9;file://D:/projects/eis/Project_EIS/public/js/app.js&#10;s&#9;FILE&#9;file://D:/projects/eis/Project_EIS/public/css/style.css&#10;app&#9;FILE&#9;file://D:/projects/eis/Project_EIS/public/js/app.js&#10;vi&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/viewpost.blade.php&#10;Program&#9;null&#9;null&#10;prog&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/our-program.blade.php&#10;Ask&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/AskController.php&#10;login&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/login.blade.php&#10;logi&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/auth/login.blade.php&#10;AskCon&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/AskController.php&#10;Das&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/DashboardController.php&#10;ask-our&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/ask-our-alumni.blade.php&#10;As&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/AskController.php&#10;rou&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/routes.php&#10;ask-n&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/ask-new-post.blade.php&#10;ask-o&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/ask-our-alumni.blade.php&#10;ask&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/ask-show.blade.php&#10;ask-sh&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/ask-show.blade.php&#10;angu&#9;FILE&#9;file://D:/projects/eis/Project_EIS/public/js/angular-script-discussion.js&#10;Da&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/DashboardController.php&#10;send&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/dashboard-admin-send.blade.php&#10;emai&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/emails/email.blade.php&#10;Dash&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/DashboardController.php&#10;Page&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/PageController.php&#10;P&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/PageController.php&#10;ro&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/routes.php&#10;das&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/DashboardController.php&#10;Pag&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/PageController.php&#10;UserCha&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Requests/UserChangeAvatarRequest.php&#10;User&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/User.php&#10;UserCh&#9;null&#9;null&#10;route&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/routes.php&#10;nav&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/layout/nav-dashboard-user.blade.php&#10;kernel&#9;null&#9;null&#10;DashboardUse&#9;null&#9;null&#10;lof&#9;null&#9;null&#10;as&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/ask-show.blade.php&#10;ask-sho&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/ask-show.blade.php&#10;ask-&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/ask-our-alumni.blade.php&#10;routes&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/routes.php&#10;Dis&#9;null&#9;null&#10;st&#9;FILE&#9;file://D:/projects/eis/Project_EIS/public/css/style.css&#10;ask-s&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/ask-show.blade.php&#10;event-s&#9;FILE&#9;file://D:/projects/eis/Project_EIS/resources/views/event-show.blade.php&#10;AskCOn&#9;FILE&#9;file://D:/projects/eis/Project_EIS/app/Http/Controllers/AskController.php&#10;ang&#9;FILE&#9;file://D:/projects/eis/Project_EIS/public/js/angular-script-discussion.js" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\projects\eis\Project_EIS\public\img" />
-      <recent name="D:\projects\eis\Project_EIS\resources\views\emails" />
-      <recent name="D:\projects\eis\Project_EIS\public\js" />
-      <recent name="D:\projects\eis\Project_EIS\public" />
-      <recent name="D:\projects\eis\Project_EIS\public\css" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\projects\eis\Project_EIS\resources\views" />
       <recent name="D:\projects\eis\Project_EIS\public\js" />
       <recent name="D:\projects\eis\Project_EIS\app\Http\Controllers" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\projects\eis\Project_EIS\public\img\team" />
+      <recent name="D:\projects\eis\Project_EIS\public\js" />
+      <recent name="D:\projects\eis\Project_EIS\public\img" />
+      <recent name="D:\projects\eis\Project_EIS\resources\views\emails" />
+      <recent name="D:\projects\eis\Project_EIS\public" />
     </key>
   </component>
   <component name="RunManager">
@@ -475,12 +454,14 @@
       <workItem from="1473569477697" duration="300000" />
       <workItem from="1473572545992" duration="58000" />
       <workItem from="1475581584117" duration="1555000" />
-      <workItem from="1476025685470" duration="2000000" />
+      <workItem from="1476025685470" duration="6707000" />
+      <workItem from="1476038108375" duration="3048000" />
+      <workItem from="1476088097179" duration="2165000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="214431000" />
+    <option name="totallyTimeSpent" value="224351000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -493,10 +474,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31240544" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3214826" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35164836" sideWeight="0.5060514" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -560,21 +541,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/vendor/beautymail/assets/images/minty/logo.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/vendor/beautymail/assets/images/sunny/fb.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/vendor/beautymail/assets/images/sunny/logo.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/snowfire/beautymail/src/views/templates/ark.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -607,13 +573,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PageController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="115" column="38" selection-start-line="115" selection-start-column="38" selection-end-line="115" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -733,7 +692,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -741,7 +699,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
           <caret line="50" column="63" selection-start-line="50" selection-start-column="63" selection-end-line="50" selection-end-column="63" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -749,7 +706,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1156">
           <caret line="68" column="6" selection-start-line="68" selection-start-column="6" selection-end-line="68" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -757,7 +713,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3791">
           <caret line="239" column="0" selection-start-line="239" selection-start-column="0" selection-end-line="239" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -765,7 +720,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -773,7 +727,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -781,7 +734,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -789,7 +741,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -797,7 +748,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -805,7 +755,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -813,7 +762,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
           <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -821,7 +769,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="152" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -829,7 +776,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -837,7 +783,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -845,7 +790,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="70" column="32" selection-start-line="70" selection-start-column="32" selection-end-line="70" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -853,9 +797,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-255">
           <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -863,7 +804,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="549">
           <caret line="78" column="63" selection-start-line="78" selection-start-column="63" selection-end-line="78" selection-end-column="63" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -882,9 +822,44 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/img/eis_mark.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/public/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/jquery.stellar.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="70" column="26" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layout/master.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="50" column="10" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/meet-eis.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1343">
+          <caret line="79" column="26" selection-start-line="68" selection-start-column="20" selection-end-line="79" selection-end-column="26" />
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/img/EIS_logo_text.gif">
@@ -900,29 +875,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/img/eis_mark.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="482" column="12" selection-start-line="482" selection-start-column="12" selection-end-line="482" selection-end-column="12" />
+        <state relative-caret-position="439">
+          <caret line="544" column="17" selection-start-line="544" selection-start-column="17" selection-end-line="544" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app.js">
+    <entry file="file://$PROJECT_DIR$/resources/views/meet2.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layout/master.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="19" column="101" selection-start-line="19" selection-start-column="101" selection-end-line="19" selection-end-column="101" />
+        <state relative-caret-position="152">
+          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#189#625#0#HTML" expanded="false" />
+            <element signature="e#637#1420#0#HTML" expanded="false" />
+            <element signature="e#1899#2354#0#HTML" expanded="false" />
+            <element signature="e#1899#2354#0#HTML" expanded="false" />
+            <element signature="e#3859#7438#0#HTML" expanded="false" />
+            <element signature="e#3931#4904#0#HTML" expanded="false" />
+            <element signature="e#4423#4428#0#HTML" expanded="true" />
+            <element signature="e#4429#4435#0#HTML" expanded="true" />
+            <element signature="e#4450#4456#0#HTML" expanded="true" />
+            <element signature="e#4925#5704#0#HTML" expanded="false" />
+            <element signature="e#5725#6552#0#HTML" expanded="false" />
+            <element signature="e#6849#6854#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>

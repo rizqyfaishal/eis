@@ -14,7 +14,7 @@
         <div class="container">
             <div class="text-center row president">
 
-                <div class="the-line col-lg-offset-1 col-lg-3">
+                <div class="stellar the-line col-lg-offset-1 col-lg-3" data-stellar-ratio="0.5">
 
                     <div class="dummy"><p>PRESIDENT OF EIS</p><p>PRESIDENT OF EIS</p><p>PRESIDENT OF EIS</p></div>
 
@@ -27,7 +27,7 @@
                     <div class="dummy"><p>PRESIDENT OF EIS</p><p>PRESIDENT OF EIS</p><p>PRESIDENT OF EIS</p><p>PRESIDENT OF EIS</p><p>PRESIDENT OF EIS</p><p>PRESIDENT OF EIS</p><p>PRESIDENT OF EIS</p><p>PRESIDENT OF EIS</p><p>PRESIDENT OF EIS</p><p>PRESIDENT OF EIS</p></div>
                 </div>
 
-                <div class="col-lg-7">
+                <div class="stellar col-lg-7" data-stellar-ratio="2">
                     <div class="whoweare text-center">WHO WE ARE</div>
                     <p class="post-title-team-member">EIS Description</p>
                     <article class="article">
@@ -60,7 +60,6 @@
                     <h1>Naufal Shidqi Andyara</h1>
                     <p>TREASURER</p>
 
-                    <div class="dummy"><p>PRESIDENT OF EIS</p><p>PRESIDENT OF EIS</p><p>PRESIDENT OF EIS</p><p>PRESIDENT OF EIS</p></div>
 
                 </div>
 
@@ -326,4 +325,10 @@
 
     </div>
 
+@endsection
+@section('stellar')
+    <script src="{{ URL::asset('js/jquery.stellar.min.js') }}"></script>
+    <script>
+        $(window).stellar();
+    </script>
 @endsection

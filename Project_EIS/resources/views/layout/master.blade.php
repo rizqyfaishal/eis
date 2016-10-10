@@ -17,7 +17,7 @@
 </head>
 <body>
 <div id="logo-ui">
-    <img src="{{ URL::asset('img/logo-ui.png') }}" alt="Logo UI" width="180" style="margin-left: 2em;">
+    <img src="{{ URL::asset('img/logo-ui.png') }}" alt="Logo UI" width="180" style="margin-left: 2em; position: absolute;top: 0;left: 2em;">
 </div>
 <div id="overlay">
     <div class="overlay-content">
@@ -63,6 +63,6 @@
     @yield('codingan-angular')
     @yield('tiny-mce')
     @yield('select2')
-
+    @yield('stellar')
 </body>
 </html>
