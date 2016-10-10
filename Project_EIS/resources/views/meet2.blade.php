@@ -42,10 +42,10 @@
                <div class="ppp">
                    <div class="box">
                        <div class="image-circle">
-                           <img src="{{ URL::asset('img/team/VicePresidentInternal.jpg') }}" class="img-team-member">
+                           <img src="{{ URL::asset('img/team/Secretary.jpg') }}" class="img-team-member">
                        </div>
-                       <h1>Andika Prawira</h1>
-                       <p>VICE PRESIDENT of INTERNAL</p>
+                       <h1>Allya Bianca Rizano</h1>
+                       <p>SECRETARY</p>
                    </div>
                </div>
            </div>
@@ -60,6 +60,17 @@
                    </div>
                </div>
            </div>
+            <div class="qqq">
+                <div class="ppp">
+                    <div class="box">
+                        <div class="image-circle">
+                            <img src="{{ URL::asset('img/team/VicePresidentInternal.jpg') }}" class="img-team-member">
+                        </div>
+                        <h1>Andika Prawira</h1>
+                        <p>VICE PRESIDENT of EXTERNAL</p>
+                    </div>
+                </div>
+            </div>
 
         </div>
         <div class="right-container" data-stellar-ratio="1.3"
@@ -84,7 +95,7 @@
                             </div>
                         </div>
                         <div class="right-content">
-                            <h1 class="text-center">PROJECT</h1>
+                            <h1 class="text-center">FINANCE</h1>
                             <h2>Arya | Rozan</h2>
                             <p>Finance is in charge of making money which would be used to fund all eis
                                 activities. Money is collected by conducting our 3 programs, which are street selling,
@@ -93,6 +104,25 @@
                     </div>
                 </div>
             </div>
+
+            <div class="qqq">
+                <div class="ppp">
+                    <div class="box">
+                        <div class="left-content">
+                            <div class="image-circle left-m xxx">
+                                <img src="{{ URL::asset('img/team/Pubnet.jpg') }}" >
+                            </div>
+                        </div>
+                        <div class="right-content">
+                            <h1 class="text-center">PUBLIC NETWORKING</h1>
+                            <h2>Steven | Shirly | Sita</h2>
+                            <p>Public Networking exists to build relationships and maintain strong networking between current KKI students and outside stakeholders.
+                                We aim to extend EIS’s existing member network locally and globally.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="qqq">
                 <div class="ppp">
                     <div class="box">
@@ -132,7 +162,98 @@
                         </div>
                         <div class="right-content">
                             <h1 class="text-center">PROJECT</h1>
-                            <h2>Gisel | Rini</h2>
+                            <h2>Dicky | Jeremy</h2>
+                            <p>We are responsible for a number of outsourced programs aimed to satisfy
+                                talents and aspirations, held by the EIS in attempts of developing soft skills through:
+                                EDUNATION, A NIGHT TO REMEMBER, and REALIZATION PROGRAM.</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="left-content">
+                            <div class="image-circle left-m xxx">
+                                <img src="{{ URL::asset('img/team/Project.jpg') }}" >
+                            </div>
+                        </div>
+                        <div class="right-content">
+                            <h1 class="text-center">STUDENT DEVELOPMENT</h1>
+                            <h2>Nilam | Bams | Caca</h2>
+                            <p>We are responsible for a number of outsourced programs aimed to satisfy
+                                talents and aspirations, held by the EIS in attempts of developing soft skills through:
+                                EDUNATION, A NIGHT TO REMEMBER, and REALIZATION PROGRAM.</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="left-content">
+                            <div class="image-circle left-m xxx">
+                                <img src="{{ URL::asset('img/team/Project.jpg') }}" >
+                            </div>
+                        </div>
+                        <div class="right-content">
+                            <h1 class="text-center">HUMAN RESOURCE DEVELOPMENT</h1>
+                            <h2>Anya | Ridzki</h2>
+                            <p>We are responsible for a number of outsourced programs aimed to satisfy
+                                talents and aspirations, held by the EIS in attempts of developing soft skills through:
+                                EDUNATION, A NIGHT TO REMEMBER, and REALIZATION PROGRAM.</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="left-content">
+                            <div class="image-circle left-m xxx">
+                                <img src="{{ URL::asset('img/team/R&I.jpg') }}" >
+                            </div>
+                        </div>
+                        <div class="right-content">
+                            <h1 class="text-center">RESEARCH & STUDIES</h1>
+                            <h2>Ervan | Vanti</h2>
+                            <p>Provides information for internal and external purposes concerning academic and
+                                non-academic matters that will be useful to realize the aspirations of students FEB KKI UI.
+                                We also analyze and report on global economic phenomenon and recent events that have happened in FEB KKI UI.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="qqq">
+                <div class="ppp">
+                    <div class="box">
+                        <div class="left-content">
+                            <div class="image-circle left-m xxx">
+                                <img src="{{ URL::asset('img/team/A&S.jpg') }}" >
+                            </div>
+                        </div>
+                        <div class="right-content">
+                            <h1 class="text-center">ARTS & SPORTS</h1>
+                            <h2>Dicky | Jeremy</h2>
+                            <p>EIS&#39; &quot;Arts and Sports&quot; is a division of EIS that facilitates FEB IUP
+                                students to express their passion for arts and sports. This division aims to unite and
+                                create bonds within the IUP community with various activities and events such as
+                                2k/FIFA competitions, the futsal club, film screenings and art exhibitions.</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="left-content">
+                            <h1 class="text-center">MARKETING</h1>
+                            <h2>Nigel | Alyssa</h2>
+                            <p>We strive to increase public awareness by making EIS’ core values well
+                                known through our programs, which include: Face of EIS, EIS Open Day, and
+                                Creative Industry</p>
+                        </div>
+                        <div class="right-content">
+                            <div class="image-circle left-m xxx">
+                                <img src="{{ URL::asset('img/team/Marketing.jpg') }}" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="left-content">
+                            <div class="image-circle left-m xxx">
+                                <img src="{{ URL::asset('img/team/Project.jpg') }}" >
+                            </div>
+                        </div>
+                        <div class="right-content">
+                            <h1 class="text-center">PROJECT</h1>
+                            <h2>Dicky | Jeremy</h2>
                             <p>We are responsible for a number of outsourced programs aimed to satisfy
                                 talents and aspirations, held by the EIS in attempts of developing soft skills through:
                                 EDUNATION, A NIGHT TO REMEMBER, and REALIZATION PROGRAM.</p>
@@ -152,7 +273,6 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
 
