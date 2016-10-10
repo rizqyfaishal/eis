@@ -8,9 +8,9 @@
 
 @section('content')
     <div class="meet">
-        <div class="left-container" data-stellar-ratio="1.1">
+        <div class="left-container" data-stellar-ratio="1.8">
            <div class="qqq">
-               <div class="ppp">
+               <div class="rrr">
                    <div class="box">
                        <div class="image-circle">
                            <img src="{{ URL::asset('img/team/President.jpg') }}" class="img-team-member">
@@ -21,7 +21,7 @@
                </div>
            </div>
            <div class="qqq">
-               <div class="ppp">
+               <div class="rrr">
                    <div class="box">
                        <div class="image-circle">
                            <img src="{{ URL::asset('img/team/Controller.jpg') }}" class="img-team-member">
@@ -39,7 +39,7 @@
                </div>
            </div>
            <div class="qqq">
-               <div class="ppp">
+               <div class="rrr">
                    <div class="box">
                        <div class="image-circle">
                            <img src="{{ URL::asset('img/team/Secretary.jpg') }}" class="img-team-member">
@@ -50,7 +50,7 @@
                </div>
            </div>
            <div class="qqq">
-               <div class="ppp">
+               <div class="rrr">
                    <div class="box">
                        <div class="image-circle">
                            <img src="{{ URL::asset('img/team/VicePresidentInternal.jpg') }}" class="img-team-member">
@@ -61,10 +61,10 @@
                </div>
            </div>
             <div class="qqq">
-                <div class="ppp">
+                <div class="sss">
                     <div class="box">
                         <div class="image-circle">
-                            <img src="{{ URL::asset('img/team/VicePresidentInternal.jpg') }}" class="img-team-member">
+                            <img src="http://placehold.it/250x250" class="img-team-member">
                         </div>
                         <h1>Andika Prawira</h1>
                         <p>VICE PRESIDENT of EXTERNAL</p>
@@ -171,15 +171,13 @@
                     <div class="box">
                         <div class="left-content">
                             <div class="image-circle left-m xxx">
-                                <img src="{{ URL::asset('img/team/Project.jpg') }}" >
+                                <img src="http://placehold.it/250x250" >
                             </div>
                         </div>
                         <div class="right-content">
                             <h1 class="text-center">STUDENT DEVELOPMENT</h1>
                             <h2>Nilam | Bams | Caca</h2>
-                            <p>We are responsible for a number of outsourced programs aimed to satisfy
-                                talents and aspirations, held by the EIS in attempts of developing soft skills through:
-                                EDUNATION, A NIGHT TO REMEMBER, and REALIZATION PROGRAM.</p>
+                            <p>Description.</p>
                         </div>
                     </div>
                     <div class="box">
