@@ -10,7 +10,6 @@
     <div class="row whole-content">
         <div class="content-update col-lg-4 col-md-4 col-sm-12">
             <p class="post-title">EIS Update</p>
-
             <div>
                 <h4><i class="fa fa-instagram">&nbsp;</i>Instagram</h4>
                 <script src="https://snapwidget.com/js/snapwidget.js"></script>

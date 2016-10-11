@@ -9,6 +9,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>EIS - @yield('title')</title>
 
+    <script src="{{ URL::asset('js/jquery-3.1.0.min.js') }}"></script>
+
+    <script src="{{ URL::asset('js/script.js') }}"></script>
+
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/bootstrap.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/font-awesome.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/style.css') }}">
@@ -17,7 +21,7 @@
 </head>
 <body>
 <div id="logo-ui">
-    <img src="{{ URL::asset('img/logo-ui.png') }}" alt="Logo UI" width="180" style="margin-left: 2em; position: absolute;top: 0;left: 2em;">
+    <img src="{{ URL::asset('img/logo-ui.png') }}" alt="Logo UI">
 </div>
 <div id="overlay">
     <div class="overlay-content">

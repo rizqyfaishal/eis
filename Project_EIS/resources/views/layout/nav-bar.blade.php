@@ -1,9 +1,12 @@
 
-<nav role="navigation" class="nav-bar">
+<nav role="navigation">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12">
-                <ul class="nav header-ul">
+            <div id="main-menu">
+                <a href="#">MENU</a>
+            </div>
+            <div class="nav-bar list-item col-lg-12">
+                <ul class="nav">
                     <li><a href="/">Home</a></li>
                     <li><a href="/meet-eis">Meet EIS</a></li>
                     <li><a href="/our-program">Our Program</a></li>
