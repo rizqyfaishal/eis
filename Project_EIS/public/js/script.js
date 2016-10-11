@@ -2,11 +2,9 @@
 $(document).ready(function () {
 
     if ($(window).width() < 992) {
-        alert("MIN");
         $(".list-item").slideUp();
     }
     else {
-        alert("MAX");
         $("#main-menu").slideUp();
     }
 

@@ -9,6 +9,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>EIS - @yield('title')</title>
 
+    <script src="{{ URL::asset('js/jquery-3.1.0.min.js') }}"></script>
+
+    <script src="{{ URL::asset('js/script.js') }}"></script>
+
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/bootstrap.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/font-awesome.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/style.css') }}">
